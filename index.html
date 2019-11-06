@@ -8,6 +8,8 @@
   <title>Главная</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -55,6 +57,8 @@
 
   <main class="main">
 
+    <div class="main__shadow hide"></div>
+
     <div class="navigation-wrapper">
 
       <aside class="navigation navigation--full">
@@ -83,6 +87,58 @@
                 <p>Трубы канализационные, соединительные детали и изделия</p>
               </a>
               <ul class="navigation__list navigation__list--inner hide">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                      <defs />
+                      <path fill="#f0f6fa"
+                        d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                    </svg>
+                    <p>Трубы канализационные, соединительные детали и изделия</p>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                      <defs />
+                      <path fill="#f0f6fa"
+                        d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                    </svg>
+                    <p>Трубы канализационные, соединительные детали и изделия</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+                <p>Трубы канализационные, соединительные детали и изделия</p>
+              </a>
+              <ul class="navigation__list navigation__list--inner hide">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                      <defs />
+                      <path fill="#f0f6fa"
+                        d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                    </svg>
+                    <p>Трубы канализационные, соединительные детали и изделия</p>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                      <defs />
+                      <path fill="#f0f6fa"
+                        d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                    </svg>
+                    <p>Трубы канализационные, соединительные детали и изделия</p>
+                  </a>
+                </li>
                 <li class="navigation__item">
                   <a class="navigation__link" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
@@ -175,22 +231,12 @@
                 <p>Трубы канализационные, соединительные детали и изделия</p>
               </a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                  <defs />
-                  <path fill="#f0f6fa"
-                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
-                </svg>
-                <p>Трубы канализационные, соединительные детали и изделия</p>
-              </a>
-            </li>
           </ul>
         </nav>
 
       </aside>
 
-      <aside class="navigation navigation--full navigation--hover hide"></aside>
+      <!-- <aside class="navigation navigation--full navigation--hover hide"></aside> -->
 
     </div>
 
@@ -290,8 +336,11 @@
 
     </aside>
 
-    <section class="page-navigation">
-      <ul>
+    <section class="content">
+
+      <!-- <h1 class="visually-hidden">Интернет магазин Сантех</h1> -->
+
+      <ul class="page-navigation">
         <li>
           <a href="#">О компании</a>
         </li>
@@ -302,12 +351,199 @@
           <a href="#">Гарантия и возврат</a>
         </li>
       </ul>
+
+      <form class="form form--search" action="https://echo.htmlacademy.ru" method="get">
+        <label for="search">
+          <input type="search" name="search" id="search" placeholder="Поиск товаров на сайте...">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <defs />
+            <path fill="#95a7b2"
+              d="M16 14.586L14.586 16l-4.258-4.258A6.457 6.457 0 016.5 13 6.508 6.508 0 010 6.5C0 2.916 2.916 0 6.5 0S13 2.916 13 6.5a6.461 6.461 0 01-1.258 3.828zM11 6.5C11 4.019 8.981 2 6.5 2A4.505 4.505 0 002 6.5C2 8.981 4.019 11 6.5 11S11 8.981 11 6.5z" />
+          </svg>
+        </label>
+      </form>
+
+      <div class="slider">
+        <ul class="slider-one">
+          <li>
+            <a href="#">
+              <img src="http://lorempixel.com/1920/1080/nature" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://lorempixel.com/1920/1080/cats" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://lorempixel.com/1920/1080/animals" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="discounts">
+        <div class="discounts__title">
+          <h2>Скидки</h2>
+          <ul class="discounts__controls">
+            <li>
+              <button type="button" class="discounts__controls-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15">
+                  <defs />
+                  <rect width="10" height="2" x="8" y="15" fill="#225A7C" rx="1" transform="rotate(-135 8 15)" />
+                  <rect width="10" height="2" x=".929" y="7.929" fill="#225A7C" rx="1"
+                    transform="rotate(-45 .929 7.929)" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="discounts__controls-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15">
+                  <defs />
+                  <rect width="10" height="2" x="8" y="15" fill="#225A7C" rx="1" transform="rotate(-135 8 15)" />
+                  <rect width="10" height="2" x=".929" y="7.929" fill="#225A7C" rx="1"
+                    transform="rotate(-45 .929 7.929)" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="slider-two">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl discounts__item">
+                <a href="#">
+                  <img src="http://lorempixel.com/1920/1080/nature" alt="">
+                  <ul class="discounts__list">
+                    <li>
+                      <span class="discount">Распродажа</span>
+                    </li>
+                    <li>
+                      <span class="new">Новинка</span>
+                    </li>
+                    <li>
+                      <span class="hits">Хиты</span>
+                    </li>
+                  </ul>
+                </a>
+                <h3>Кран для манометра 3х-ходовой латунь 1061 (11б38бк/11б18бк) Aquasfera</h3>
+                <span class="instock">В наличии</span>
+                <div class="discount__price-wrapper">
+                  <div class="discounts__price">
+                    <del>294,96руб</del>
+                    <span>294,96руб</span>
+                  </div>
+                  <div class="discount__order">
+                    <a href="#">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl discounts__item">
+                <a href="#">
+                  <img src="http://lorempixel.com/1920/1080/nature" alt="">
+                  <ul class="discounts__list">
+                    <li>
+                      <span class="discount">Распродажа</span>
+                    </li>
+                    <li>
+                      <span class="new">Новинка</span>
+                    </li>
+                    <li>
+                      <span class="hits">Хиты</span>
+                    </li>
+                  </ul>
+                </a>
+                <h3>Кран для манометра 3х-ходовой латунь 1061 (11б38бк/11б18бк) Aquasfera</h3>
+                <span class="instock">В наличии</span>
+                <div class="discount__price-wrapper">
+                  <div class="discounts__price">
+                    <del>294,96руб</del>
+                    <span>294,96руб</span>
+                  </div>
+                  <div class="discount__order">
+                    <a href="#">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl discounts__item">
+                <a href="#">
+                  <img src="http://lorempixel.com/1920/1080/nature" alt="">
+                  <ul class="discounts__list">
+                    <li>
+                      <span class="discount">Распродажа</span>
+                    </li>
+                    <li>
+                      <span class="new">Новинка</span>
+                    </li>
+                    <li>
+                      <span class="hits">Хиты</span>
+                    </li>
+                  </ul>
+                </a>
+                <h3>Кран для манометра 3х-ходовой латунь 1061 (11б38бк/11б18бк) Aquasfera</h3>
+                <span class="instock">В наличии</span>
+                <div class="discount__price-wrapper">
+                  <div class="discounts__price">
+                    <del>294,96руб</del>
+                    <span>294,96руб</span>
+                  </div>
+                  <div class="discount__order">
+                    <a href="#">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl discounts__item">
+                <a href="#">
+                  <img src="http://lorempixel.com/1920/1080/nature" alt="">
+                  <ul class="discounts__list">
+                    <li>
+                      <span class="discount">Распродажа</span>
+                    </li>
+                    <li>
+                      <span class="new">Новинка</span>
+                    </li>
+                    <li>
+                      <span class="hits">Хиты</span>
+                    </li>
+                  </ul>
+                </a>
+                <h3>Кран для манометра 3х-ходовой латунь 1061 (11б38бк/11б18бк) Aquasfera</h3>
+                <span class="instock">В наличии</span>
+                <div class="discount__price-wrapper">
+                  <div class="discounts__price">
+                    <del>294,96руб</del>
+                    <span>294,96руб</span>
+                  </div>
+                  <div class="discount__order">
+                    <a href="#">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </section>
 
   </main>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="slick/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
