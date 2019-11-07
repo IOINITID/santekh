@@ -6,6 +6,8 @@
 
 Страница каталога: 🖥️ https://ioinitid.github.io/santekh/catalog.html
 
+Страница категорий: 🖥️ https://ioinitid.github.io/santekh/category.html
+
 ------------
 
 Сделано с ❤️ в [WEB-ELITIT.RU](https://www.web-elitit.ru "Web-elitit.ru")
