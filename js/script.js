@@ -3,13 +3,11 @@ $('.menu-button').on('click', () => {
   $('.navigation--short').toggleClass('show');
 });
 
-$('.navigation__item').mouseover(() => {
-  // $('.navigation--hover').addClass('show');
+$('.navigation--full .navigation__item').mouseover(() => {
   $('.main__shadow').removeClass('hide');
 });
 
-$('.navigation__item').mouseout(() => {
-  // $('.navigation--hover').removeClass('show');
+$('.navigation--full .navigation__item').mouseout(() => {
   $('.main__shadow').addClass('hide');
 });
 
@@ -33,12 +31,69 @@ $('.slider-one').slick({
 $('.slider-two').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  // autoplay: true,
-  // autoplaySpeed: 5000,
+  autoplay: true,
+  autoplaySpeed: 5000,
   arrows: true,
   dots: false,
-  prevArrow: '.discounts__controls-prev',
-  nextArrow: '.discounts__controls-next',
+  prevArrow: '.slider-two-prev',
+  nextArrow: '.slider-two-next',
+  // responsive: [{
+  //   breakpoint: 768,
+  //   settings: {
+  //     arrows: true,
+  //     slidesToShow: 1,
+  //     dots: false
+  //   }
+  // }]
+});
+
+$('.slider-three').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: true,
+  dots: false,
+  prevArrow: '.slider-three-prev',
+  nextArrow: '.slider-three-next',
+  // responsive: [{
+  //   breakpoint: 768,
+  //   settings: {
+  //     arrows: true,
+  //     slidesToShow: 1,
+  //     dots: false
+  //   }
+  // }]
+});
+
+$('.slider-four').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: true,
+  dots: false,
+  prevArrow: '.slider-four-prev',
+  nextArrow: '.slider-four-next',
+  // responsive: [{
+  //   breakpoint: 768,
+  //   settings: {
+  //     arrows: true,
+  //     slidesToShow: 1,
+  //     dots: false
+  //   }
+  // }]
+});
+
+$('.slider-five').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: true,
+  dots: false,
+  prevArrow: '.slider-five-prev',
+  nextArrow: '.slider-five-next',
   // responsive: [{
   //   breakpoint: 768,
   //   settings: {
