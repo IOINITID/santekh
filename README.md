@@ -4,6 +4,8 @@
 
 Главная страница сайта: 🖥️ https://ioinitid.github.io/santekh/index.html
 
+Страница каталога: 🖥️ https://ioinitid.github.io/santekh/catalog.html
+
 ------------
 
 Сделано с ❤️ в [WEB-ELITIT.RU](https://www.web-elitit.ru "Web-elitit.ru")
