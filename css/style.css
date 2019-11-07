@@ -993,8 +993,8 @@ input::-webkit-search-results-decoration {
   align-items: center;
 }
 
-.item-wrapper .feature table tr .help::after {
-  content: "?";
+.item-wrapper .feature table tr .help__icon {
+  /* content: "?"; */
   width: 14px;
   height: 14px;
   background-color: #bed8e9;
@@ -1006,6 +1006,29 @@ input::-webkit-search-results-decoration {
   align-items: center;
   justify-content: center;
   margin-left: 5px;
+  position: relative;
+}
+
+.item-wrapper .feature table tr .help__text {
+  display: none;
+  width: 300px;
+  max-height: 140px;
+  padding: 20px;
+  color: #1e222a;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 2;
+  border-radius: 6px;
+  border: 1px solid #dee5ea;
+}
+
+.item-wrapper .feature table tr .help__icon:hover .help__text {
+  display: block;
 }
 
 .item-wrapper .feature .show {
@@ -1261,9 +1284,9 @@ input::-webkit-search-results-decoration {
 
 .item-wrapper .widgets__title h2 {
   color: #1e232a;
-font-size: 30px;
-font-weight: 700;
-margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
 }
 
 .item-wrapper .widgets .container {
