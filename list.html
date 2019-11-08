@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Главная</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="main__shadow hide"></div>
+  <div class="main-wrapper">
+
+    <div class="wrapper-navigation">
+      <aside class="navigation navigation--full">
+        <div class="menu-button--full">
+          <a class="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12">
+              <defs />
+              <path fill="#fff"
+                d="M0 1a1 1 0 011-1h22a1 1 0 110 2H1a1 1 0 01-1-1zM0 6a1 1 0 011-1h14a1 1 0 110 2H1a1 1 0 01-1-1zM0 11a1 1 0 011-1h22a1 1 0 110 2H1a1 1 0 01-1-1z" />
+            </svg>
+          </a>
+        </div>
+        <span class="logo--full">
+          <svg xmlns="http://www.w3.org/2000/svg" width="162" height="50" fill="none" viewBox="0 0 162 50">
+            <defs />
+            <path fill="#2A6B93" fill-rule="evenodd"
+              d="M33.416 0l7.444 13.167 13.62 24.089H22.294l-2.159-3.811-.314-.567h26.851l-.44-.756-15.565-27-.427-.744H24.24L5.297 37.256H0l13.62-24.09L21.064 0h12.352zM19.394 32.122l-2.472-4.366 5.159-9.134L27.24 9.5l5.16 9.122 5.159 9.134H16.922l-3.227 5.689-2.146 3.81H6.25L24.767 5.123h4.946l15.566 27H19.394zM63.815 31.468l11.097-19.612h-6.076c-2.761 4.867-5.51 9.734-8.272 14.612-2.75-4.878-5.51-9.745-8.26-14.612h-2.56L61.04 31.468h2.774zM48.79 11.856h-2.56l11.084 19.612h2.774L48.789 11.856zM106.344 28.479h13.155l1.683 2.989h2.56l-11.297-19.612h-2.775L98.574 31.468h6.075l1.695-2.99zm18.352 2.989h2.561l-11.084-19.612h-2.774l11.297 19.612zm-8.034-7.99h-7.494l3.753-6.622 3.741 6.622z"
+              clip-rule="evenodd" />
+            <path fill="#2A6B93" fill-rule="evenodd"
+              d="M92.485 31.468l11.096-19.612h-6.088c-2.749 4.867-5.498 9.734-8.26 14.612-2.748-4.878-5.51-9.745-8.26-14.612h-2.56L89.71 31.468h2.774zM77.459 11.856h-2.561l11.084 19.612h2.774L77.46 11.856z"
+              clip-rule="evenodd" />
+            <path fill="#2A6B93"
+              d="M86.019 44.811l2.975.811c-.464 1.478-1.218 2.578-2.284 3.3C85.642 49.645 84.3 50 82.667 50c-2.02 0-3.69-.611-4.996-1.833-1.293-1.223-1.945-2.89-1.945-5.012 0-2.244.652-3.989 1.958-5.233 1.305-1.244 3.038-1.867 5.16-1.867 1.87 0 3.376.49 4.543 1.467.69.578 1.218 1.411 1.557 2.49l-3.038.643c-.176-.7-.552-1.255-1.13-1.655-.565-.411-1.268-.611-2.084-.611-1.13 0-2.046.367-2.749 1.078-.703.722-1.054 1.877-1.054 3.477 0 1.7.351 2.923 1.042 3.645.69.722 1.594 1.078 2.699 1.078.815 0 1.531-.223 2.109-.69.59-.455 1.016-1.177 1.28-2.166zM104.802 49.778h-3.314l-1.318-3.067h-6.1L92.8 49.778h-3.263L95.45 36.3H98.7l6.101 13.478zm-5.636-5.345l-2.11-4.989-2.058 4.99h4.168zM106.446 49.778V36.3h3.076v5.311h6V36.3h3.076v13.478h-3.076v-5.89h-6v5.89h-3.076zM125.218 49.778v-11.2h-4.506V36.3h12.076v2.278h-4.482v11.2h-3.088zM134.78 49.778V36.3h11.26v2.278h-8.185v3h7.62v2.266h-7.62V47.5h8.486v2.278H134.78zM147.427 49.778l5.247-7.023-4.758-6.455h3.578l3 4.01 3-4.01h3.59l-4.77 6.456 5.247 7.022h-3.691l-3.376-4.567-3.377 4.567h-3.69z" />
+          </svg>
+        </span>
+        <nav>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+                <p>Трубы канализационные, соединительные детали и изделия</p>
+              </a>
+              <ul class="navigation__list navigation__list--inner hide">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                      <defs />
+                      <path fill="#f0f6fa"
+                        d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                    </svg>
+                    <p>Трубы канализационные, соединительные детали и изделия</p>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                      <defs />
+                      <path fill="#f0f6fa"
+                        d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                    </svg>
+                    <p>Трубы канализационные, соединительные детали и изделия</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+                <p>Трубы канализационные, соединительные детали и изделия</p>
+              </a>
+              <ul class="navigation__list navigation__list--inner hide">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                      <defs />
+                      <path fill="#f0f6fa"
+                        d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                    </svg>
+                    <p>Трубы канализационные, соединительные детали и изделия</p>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                      <defs />
+                      <path fill="#f0f6fa"
+                        d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                    </svg>
+                    <p>Трубы канализационные, соединительные детали и изделия</p>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                      <defs />
+                      <path fill="#f0f6fa"
+                        d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                    </svg>
+                    <p>Трубы канализационные, соединительные детали и изделия</p>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                      <defs />
+                      <path fill="#f0f6fa"
+                        d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                    </svg>
+                    <p>Трубы канализационные, соединительные детали и изделия</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+                <p>Трубы канализационные, соединительные детали и изделия</p>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+                <p>Трубы канализационные, соединительные детали и изделия</p>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+                <p>Трубы канализационные, соединительные детали и изделия</p>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+                <p>Трубы канализационные, соединительные детали и изделия</p>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+                <p>Трубы канализационные, соединительные детали и изделия</p>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+                <p>Трубы канализационные, соединительные детали и изделия</p>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+                <p>Трубы канализационные, соединительные детали и изделия</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </aside>
+      <aside class="navigation navigation--short hide">
+        <a class="menu-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12">
+            <defs />
+            <path fill="#fff"
+              d="M0 1a1 1 0 011-1h22a1 1 0 110 2H1a1 1 0 01-1-1zM0 6a1 1 0 011-1h14a1 1 0 110 2H1a1 1 0 01-1-1zM0 11a1 1 0 011-1h22a1 1 0 110 2H1a1 1 0 01-1-1z" />
+          </svg>
+        </a>
+        <span class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="55" height="38" fill="none" viewBox="0 0 55 38">
+            <defs />
+            <path fill="#2A6B93" fill-rule="evenodd"
+              d="M33.416 0l7.444 13.167 13.62 24.089H22.294l-2.159-3.811-.314-.567h26.851l-.44-.756-15.565-27-.427-.744H24.24L5.297 37.256H0l13.62-24.09L21.064 0h12.352zM19.394 32.122l-2.472-4.366 5.159-9.134L27.24 9.5l5.16 9.122 5.159 9.134H16.922l-3.227 5.689-2.146 3.81H6.25L24.767 5.123h4.946l15.566 27H19.394z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+        <nav>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <defs />
+                  <path fill="#f0f6fa"
+                    d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
+    <div class="wrapper">
+
+      <header class="header">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row header__row">
+              <div class="col-xl-2 header__item header__item--account">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="27" viewBox="0 0 20 27">
+                  <defs />
+                  <path fill="#4b80b3"
+                    d="M10.004 12.86c2.924 0 5.294-2.879 5.294-6.43 0-3.551-.778-6.43-5.294-6.43S4.71 2.879 4.71 6.43c0 3.551 2.37 6.43 5.294 6.43zM19.986 22.415c-.098-6.186-.906-7.95-7.088-9.065 0 0-.87 1.109-2.899 1.109S7.1 13.35 7.1 13.35C.985 14.454.128 16.19.015 22.214c-.01.492-.013.518-.015.46v.65s1.474 2.968 10 2.968 9.998-2.968 9.998-2.968v-.48c-.001.035-.004-.034-.01-.43z" />
+                </svg>
+                <a href="#">Личный кабинет</a>
+              </div>
+              <div class="col-xl-2 offset-xl-4 header__item header__item--order">
+                <a href="#">Заказать звонок</a>
+              </div>
+              <div class="col-xl-2 header__item header__item--tel">
+                <a href="tel:+79624458454">8 (962) 445 84 54</a>
+              </div>
+              <div class="col-xl-2 header__item header__item--cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewBox="0 0 30 27">
+                  <defs />
+                  <path fill="#4b80b3"
+                    d="M9.727 17.578h15.879c.393 0 .738-.26.844-.637l3.516-12.305a.878.878 0 00-.845-1.12H7.697L7.07.688A.879.879 0 006.211 0H.879a.879.879 0 100 1.758h4.627L8.679 16.04a2.638 2.638 0 00-1.59 2.417 2.64 2.64 0 002.638 2.637h15.879a.878.878 0 100-1.758H9.726a.88.88 0 010-1.758z" />
+                  <path fill="#649abc"
+                    d="M8.85 23.727a2.64 2.64 0 002.637 2.636 2.64 2.64 0 002.637-2.636 2.64 2.64 0 00-2.637-2.637 2.64 2.64 0 00-2.637 2.637zM21.21 23.727a2.64 2.64 0 002.637 2.636 2.64 2.64 0 002.636-2.636 2.64 2.64 0 00-2.636-2.637 2.64 2.64 0 00-2.637 2.637z" />
+                </svg>
+                <a href="#">Корзина</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container main">
+        <section class="content">
+          <h1 class="visually-hidden">Интернет магазин Сантех</h1>
+          <div class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Каталог товаров</a>
+              </li>
+              <li>
+                <a href="#" class="active">Раздел 1-го уровня</a>
+              </li>
+            </ul>
+          </div>
+
+          <section class="list-wrapper">
+            <h2>Раздел 2-го уровня</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-9">
+                  <ul class="filter-list">
+                    <li class="filter-item">
+                      <a href="#">ТМК</a>
+                    </li>
+                    <li class="filter-item">
+                      <a href="#">Россия</a>
+                    </li>
+                    <li class="filter-item">
+                      <a href="#">неоцинкованные</a>
+                    </li>
+                    <li class="filter-item">
+                      <a href="#">оцинкованные</a>
+                    </li>
+                    <li class="filter-item">
+                      <a href="#">неоцинкованные 15 мм</a>
+                    </li>
+                    <li class="filter-item">
+                      <a href="#">неоцинкованные 20 мм</a>
+                    </li>
+                    <li class="filter-item filter-item--active">
+                      <a href="#">неоцинкованные 20 мм</a>
+                    </li>
+                  </ul>
+                  <div class="list-wrapper__sort">
+                    <ul class="tabs">
+                      <li>
+                        <a href="#" class="active">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+                            <defs />
+                            <path fill="#fff"
+                              d="M0 1a1 1 0 011-1h14a1 1 0 110 2H1a1 1 0 01-1-1zM0 6a1 1 0 011-1h14a1 1 0 110 2H1a1 1 0 01-1-1zM0 11a1 1 0 011-1h14a1 1 0 110 2H1a1 1 0 01-1-1z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                            <defs />
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="#fff" d="M0 1a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H1a1 1 0 01-1-1z" />
+                              </clipPath>
+                              <clipPath id="b">
+                                <path fill="#fff" d="M8 1a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H9a1 1 0 01-1-1z" />
+                              </clipPath>
+                              <clipPath id="c">
+                                <path fill="#fff" d="M0 9a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H1a1 1 0 01-1-1z" />
+                              </clipPath>
+                              <clipPath id="d">
+                                <path fill="#fff" d="M8 9a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H9a1 1 0 01-1-1z" />
+                              </clipPath>
+                            </defs>
+                            <path fill="none" stroke="#1f4e6a" stroke-miterlimit="50" stroke-width="4"
+                              d="M0 1a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H1a1 1 0 01-1-1z"
+                              clip-path="url(&quot;#a&quot;)" />
+                            <path fill="none" stroke="#1f4e6a" stroke-miterlimit="50" stroke-width="4"
+                              d="M8 1a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H9a1 1 0 01-1-1z"
+                              clip-path="url(&quot;#b&quot;)" />
+                            <path fill="none" stroke="#1f4e6a" stroke-miterlimit="50" stroke-width="4"
+                              d="M0 9a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H1a1 1 0 01-1-1z"
+                              clip-path="url(&quot;#c&quot;)" />
+                            <path fill="none" stroke="#1f4e6a" stroke-miterlimit="50" stroke-width="4"
+                              d="M8 9a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H9a1 1 0 01-1-1z"
+                              clip-path="url(&quot;#d&quot;)" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <span class="sort__title">Сортировка</span>
+                    <form class="form__search" action="https://echo.htmlacademy.ru" method="get">
+                      <label for="search">
+                        <input type="search" name="search" id="search" placeholder="Поиск товаров на сайте...">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                          <defs />
+                          <path fill="#95a7b2"
+                            d="M16 14.586L14.586 16l-4.258-4.258A6.457 6.457 0 016.5 13 6.508 6.508 0 010 6.5C0 2.916 2.916 0 6.5 0S13 2.916 13 6.5a6.461 6.461 0 01-1.258 3.828zM11 6.5C11 4.019 8.981 2 6.5 2A4.505 4.505 0 002 6.5C2 8.981 4.019 11 6.5 11S11 8.981 11 6.5z" />
+                        </svg>
+                      </label>
+                    </form>
+                  </div>
+                  <div class="goods">
+                    <ul class="goods__list">
+                      <li class="goods__item">
+                        <div class="goods__left">
+                          <span>
+                            <img src="http://lorempixel.com/1920/1080/cats" alt="">
+                          </span>
+                          <div class="goods__text">
+                            <h3>Труба сталь ВГП ГОСТ 3262-75 ТМК</h3>
+                            <ul>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li class="active">
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="goods__right">
+                          <p class="price-title">Цена за м, от</p>
+                          <div class="goods__top">
+                            <p>294,96руб</p>
+                            <p class="price-side">Сравнить</p>
+                          </div>
+                          <div class="goods__right-bottom">
+                            <div class="price__quantity">
+                              <div class="price__quantity-title">
+                                <p>1</p>
+                                <span>м</span>
+                              </div>
+                              <div class="price__quantity-controls">
+                                <button type="button" class="plus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M4.4 1.1a1.1 1.1 0 012.2 0v8.8a1.1 1.1 0 01-2.2 0z" />
+                                    <path fill="#04b2d9" d="M9.9 4.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                                <button type="button" class="minus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M9.9.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <a class="price__cart" href="#">В корзину</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="goods__item">
+                        <div class="goods__left">
+                          <span>
+                            <img src="http://lorempixel.com/1920/1080/cats" alt="">
+                          </span>
+                          <div class="goods__text">
+                            <h3>Труба сталь ВГП ГОСТ 3262-75 ТМК</h3>
+                            <ul>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li class="active">
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="goods__right">
+                          <p class="price-title">Цена за м, от</p>
+                          <div class="goods__top">
+                            <p>294,96руб</p>
+                            <p class="price-side">Сравнить</p>
+                          </div>
+                          <div class="goods__right-bottom">
+                            <div class="price__quantity">
+                              <div class="price__quantity-title">
+                                <p>1</p>
+                                <span>м</span>
+                              </div>
+                              <div class="price__quantity-controls">
+                                <button type="button" class="plus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M4.4 1.1a1.1 1.1 0 012.2 0v8.8a1.1 1.1 0 01-2.2 0z" />
+                                    <path fill="#04b2d9" d="M9.9 4.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                                <button type="button" class="minus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M9.9.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <a class="price__cart" href="#">В корзину</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="goods__item">
+                        <div class="goods__left">
+                          <span>
+                            <img src="http://lorempixel.com/1920/1080/cats" alt="">
+                          </span>
+                          <div class="goods__text">
+                            <h3>Труба сталь ВГП ГОСТ 3262-75 ТМК</h3>
+                            <ul>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li class="active">
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="goods__right">
+                          <p class="price-title">Цена за м, от</p>
+                          <div class="goods__top">
+                            <p>294,96руб</p>
+                            <p class="price-side">Сравнить</p>
+                          </div>
+                          <div class="goods__right-bottom">
+                            <div class="price__quantity">
+                              <div class="price__quantity-title">
+                                <p>1</p>
+                                <span>м</span>
+                              </div>
+                              <div class="price__quantity-controls">
+                                <button type="button" class="plus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M4.4 1.1a1.1 1.1 0 012.2 0v8.8a1.1 1.1 0 01-2.2 0z" />
+                                    <path fill="#04b2d9" d="M9.9 4.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                                <button type="button" class="minus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M9.9.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <a class="price__cart" href="#">В корзину</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="goods__item">
+                        <div class="goods__left">
+                          <span>
+                            <img src="http://lorempixel.com/1920/1080/cats" alt="">
+                          </span>
+                          <div class="goods__text">
+                            <h3>Труба сталь ВГП ГОСТ 3262-75 ТМК</h3>
+                            <ul>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li class="active">
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="goods__right">
+                          <p class="price-title">Цена за м, от</p>
+                          <div class="goods__top">
+                            <p>294,96руб</p>
+                            <p class="price-side">Сравнить</p>
+                          </div>
+                          <div class="goods__right-bottom">
+                            <div class="price__quantity">
+                              <div class="price__quantity-title">
+                                <p>1</p>
+                                <span>м</span>
+                              </div>
+                              <div class="price__quantity-controls">
+                                <button type="button" class="plus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M4.4 1.1a1.1 1.1 0 012.2 0v8.8a1.1 1.1 0 01-2.2 0z" />
+                                    <path fill="#04b2d9" d="M9.9 4.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                                <button type="button" class="minus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M9.9.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <a class="price__cart" href="#">В корзину</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="goods__item">
+                        <div class="goods__left">
+                          <span>
+                            <img src="http://lorempixel.com/1920/1080/cats" alt="">
+                          </span>
+                          <div class="goods__text">
+                            <h3>Труба сталь ВГП ГОСТ 3262-75 ТМК</h3>
+                            <ul>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li class="active">
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="goods__right">
+                          <p class="price-title">Цена за м, от</p>
+                          <div class="goods__top">
+                            <p>294,96руб</p>
+                            <p class="price-side">Сравнить</p>
+                          </div>
+                          <div class="goods__right-bottom">
+                            <div class="price__quantity">
+                              <div class="price__quantity-title">
+                                <p>1</p>
+                                <span>м</span>
+                              </div>
+                              <div class="price__quantity-controls">
+                                <button type="button" class="plus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M4.4 1.1a1.1 1.1 0 012.2 0v8.8a1.1 1.1 0 01-2.2 0z" />
+                                    <path fill="#04b2d9" d="M9.9 4.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                                <button type="button" class="minus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M9.9.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <a class="price__cart" href="#">В корзину</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="goods__item">
+                        <div class="goods__left">
+                          <span>
+                            <img src="http://lorempixel.com/1920/1080/cats" alt="">
+                          </span>
+                          <div class="goods__text">
+                            <h3>Труба сталь ВГП ГОСТ 3262-75 ТМК</h3>
+                            <ul>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li class="active">
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="goods__right">
+                          <p class="price-title">Цена за м, от</p>
+                          <div class="goods__top">
+                            <p>294,96руб</p>
+                            <p class="price-side">Сравнить</p>
+                          </div>
+                          <div class="goods__right-bottom">
+                            <div class="price__quantity">
+                              <div class="price__quantity-title">
+                                <p>1</p>
+                                <span>м</span>
+                              </div>
+                              <div class="price__quantity-controls">
+                                <button type="button" class="plus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M4.4 1.1a1.1 1.1 0 012.2 0v8.8a1.1 1.1 0 01-2.2 0z" />
+                                    <path fill="#04b2d9" d="M9.9 4.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                                <button type="button" class="minus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M9.9.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <a class="price__cart" href="#">В корзину</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="goods__item">
+                        <div class="goods__left">
+                          <span>
+                            <img src="http://lorempixel.com/1920/1080/cats" alt="">
+                          </span>
+                          <div class="goods__text">
+                            <h3>Труба сталь ВГП ГОСТ 3262-75 ТМК</h3>
+                            <ul>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li class="active">
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="goods__right">
+                          <p class="price-title">Цена за м, от</p>
+                          <div class="goods__top">
+                            <p>294,96руб</p>
+                            <p class="price-side">Сравнить</p>
+                          </div>
+                          <div class="goods__right-bottom">
+                            <div class="price__quantity">
+                              <div class="price__quantity-title">
+                                <p>1</p>
+                                <span>м</span>
+                              </div>
+                              <div class="price__quantity-controls">
+                                <button type="button" class="plus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M4.4 1.1a1.1 1.1 0 012.2 0v8.8a1.1 1.1 0 01-2.2 0z" />
+                                    <path fill="#04b2d9" d="M9.9 4.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                                <button type="button" class="minus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M9.9.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <a class="price__cart" href="#">В корзину</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="goods__item">
+                        <div class="goods__left">
+                          <span>
+                            <img src="http://lorempixel.com/1920/1080/cats" alt="">
+                          </span>
+                          <div class="goods__text">
+                            <h3>Труба сталь ВГП ГОСТ 3262-75 ТМК</h3>
+                            <ul>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li class="active">
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="goods__right">
+                          <p class="price-title">Цена за м, от</p>
+                          <div class="goods__top">
+                            <p>294,96руб</p>
+                            <p class="price-side">Сравнить</p>
+                          </div>
+                          <div class="goods__right-bottom">
+                            <div class="price__quantity">
+                              <div class="price__quantity-title">
+                                <p>1</p>
+                                <span>м</span>
+                              </div>
+                              <div class="price__quantity-controls">
+                                <button type="button" class="plus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M4.4 1.1a1.1 1.1 0 012.2 0v8.8a1.1 1.1 0 01-2.2 0z" />
+                                    <path fill="#04b2d9" d="M9.9 4.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                                <button type="button" class="minus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M9.9.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <a class="price__cart" href="#">В корзину</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="goods__item">
+                        <div class="goods__left">
+                          <span>
+                            <img src="http://lorempixel.com/1920/1080/cats" alt="">
+                          </span>
+                          <div class="goods__text">
+                            <h3>Труба сталь ВГП ГОСТ 3262-75 ТМК</h3>
+                            <ul>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li class="active">
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                              <li>
+                                <a href="#">Ду 15 Дн 21,3 х2,5 </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="goods__right">
+                          <p class="price-title">Цена за м, от</p>
+                          <div class="goods__top">
+                            <p>294,96руб</p>
+                            <p class="price-side">Сравнить</p>
+                          </div>
+                          <div class="goods__right-bottom">
+                            <div class="price__quantity">
+                              <div class="price__quantity-title">
+                                <p>1</p>
+                                <span>м</span>
+                              </div>
+                              <div class="price__quantity-controls">
+                                <button type="button" class="plus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M4.4 1.1a1.1 1.1 0 012.2 0v8.8a1.1 1.1 0 01-2.2 0z" />
+                                    <path fill="#04b2d9" d="M9.9 4.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                                <button type="button" class="minus">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                                    <defs />
+                                    <path fill="#04b2d9" d="M9.9.4a1.1 1.1 0 010 2.2H1.1a1.1 1.1 0 010-2.2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <a class="price__cart" href="#">В корзину</a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-3">
+                  <div class="filter">
+                    <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+                      <fieldset class="filter__fieldset">
+                        <legend class="filter__legend">Страна производитель</legend>
+                        <label class="filter__label" for="country-one">
+                          Россия
+                          <input type="radio" name="country" id="country-one">
+                          <span></span>
+                        </label>
+                        <label class="filter__label" for="country-two">
+                          Германия
+                          <input type="radio" name="country" id="country-two">
+                          <span></span>
+                        </label>
+                        <label class="filter__label" for="country-three">
+                          Франция
+                          <input type="radio" name="country" id="country-three">
+                          <span></span>
+                        </label>
+                      </fieldset>
+                      <fieldset class="filter__fieldset">
+                        <legend class="filter__legend">Показывать товары</legend>
+                        <label class="filter__label" for="goods-one">
+                          Акция
+                          <input type="radio" name="goods" id="goods-one">
+                          <span></span>
+                        </label>
+                        <label class="filter__label" for="goods-two">
+                          Германия
+                          <input type="radio" name="goods" id="goods-two">
+                          <span></span>
+                        </label>
+                        <label class="filter__label" for="goods-three">
+                          Франция
+                          <input type="radio" name="goods" id="goods-three">
+                          <span></span>
+                        </label>
+                      </fieldset>
+                      <fieldset class="filter__fieldset">
+                        <legend class="filter__legend">Наличие</legend>
+                        <label class="filter__label" for="available-one">
+                          В наличии
+                          <input type="radio" name="available" id="available-one">
+                          <span></span>
+                        </label>
+                        <label class="filter__label" for="available-one">
+                          Распродажа остатка
+                          <input type="radio" name="available" id="available-one">
+                          <span></span>
+                        </label>
+                        <label class="filter__label" for="available-one">
+                          Ожидает поступления
+                          <input type="radio" name="available" id="available-one">
+                          <span></span>
+                        </label>
+                      </fieldset>
+                      <fieldset class="filter__fieldset">
+                        <legend class="filter__legend">Бренд</legend>
+                        <label class="filter__label" for="available-one">
+                          ТНК
+                          <input type="radio" name="available" id="available-one">
+                          <span></span>
+                        </label>
+                        <label class="filter__label" for="available-one">
+                          ЛГБТ
+                          <input type="radio" name="available" id="available-one">
+                          <span></span>
+                        </label>
+                        <label class="filter__label" for="available-one">
+                          КАМАЗ
+                          <input type="radio" name="available" id="available-one">
+                          <span></span>
+                        </label>
+                      </fieldset>
+                      <fieldset class="filter__fieldset">
+                        <legend class="filter__legend">Диаметр условный</legend>
+                        <div class="filter__dots">
+                          <label class="filter__label" for="available-one">
+                            15
+                            <input type="radio" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label" for="available-one">
+                            56
+                            <input type="radio" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label" for="available-one">
+                            66
+                            <input type="radio" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label" for="available-one">
+                            15
+                            <input type="radio" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label" for="available-one">
+                            56
+                            <input type="radio" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label" for="available-one">
+                            66
+                            <input type="radio" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label" for="available-one">
+                            15
+                            <input type="radio" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label" for="available-one">
+                            56
+                            <input type="radio" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label" for="available-one">
+                            66
+                            <input type="radio" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                        </div>
+                      </fieldset>
+                      <fieldset class="filter__fieldset filter__slider">
+                        <legend class="filter__legend">Цена, руб</legend>
+                        <div class="slider__line">
+                          <div id="slider"></div>
+                        </div>
+                        <div class="filter__values">
+                          <input type="number" name="" id="slider__value-from" value="10000">
+                          <div class="filter__line"></div>
+                          <input type="number" name="" id="slider__value-to" value="30000">
+                        </div>
+                      </fieldset>
+                      <fieldset class="filter__fieldset">
+                        <legend class="filter__legend">Чекбоксы</legend>
+                        <div class="filter__dots filter__checkbox">
+                          <label class="filter__label filter__label--checkbox" for="available-one">
+                            ТНК
+                            <input type="checkbox" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label filter__label--checkbox" for="available-one">
+                            ТНК
+                            <input type="checkbox" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label filter__label--checkbox" for="available-one">
+                            ЛГБТ
+                            <input type="checkbox" name="available" id="available-one" checked>
+                            <span></span>
+                          </label>
+                          <label class="filter__label filter__label--checkbox" for="available-one">
+                            ЛГБТ
+                            <input type="checkbox" name="available" id="available-one" checked>
+                            <span></span>
+                          </label>
+                          <label class="filter__label filter__label--checkbox" for="available-one">
+                            КАМАЗ
+                            <input type="checkbox" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                          <label class="filter__label filter__label--checkbox" for="available-one">
+                            КАМАЗ
+                            <input type="checkbox" name="available" id="available-one">
+                            <span></span>
+                          </label>
+                        </div>
+                      </fieldset>
+                      <div class="filter__send">
+                        <button type="submit">Показать</button>
+                        <p>Найдено: 27</p>
+                      </div>
+                      <input class="filter__reset" type="reset" value="Сбросить все фильтры">
+                    </form>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <ul>
+                    <li>
+                      <a href="#">1</a>
+                    </li>
+                    <li>
+                      <a href="#">2</a>
+                    </li>
+                    <li class="active">
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href="#">4</a>
+                    </li>
+                    <li>
+                      <a href="#">5</a>
+                    </li>
+                    <li>
+                      <a href="#">6</a>
+                    </li>
+                    <li>
+                      <a href="#">7</a>
+                    </li>
+                    <li>
+                      <a href="#">8</a>
+                    </li>
+                    <li>
+                      <a href="#">9</a>
+                    </li>
+                    <li>
+                      <a href="#">...</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </section>
+      </main>
+
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3">
+            <address>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" fill="none" viewBox="0 0 10 15">
+                  <defs />
+                  <path fill="#F0F6FA"
+                    d="M8.536 1.539C7.592.547 6.336 0 5.001 0 3.665 0 2.409.547 1.465 1.539-.283 3.375-.5 6.829.995 8.922L5 15l4-6.07c1.5-2.101 1.283-5.555-.465-7.391zm-3.49 5.583c-1.006 0-1.825-.86-1.825-1.917s.82-1.918 1.826-1.918c1.006 0 1.825.86 1.825 1.918 0 1.057-.82 1.917-1.825 1.917z" />
+                </svg>
+              </span>
+              <p>355000, Ставропольский край,<br>г. Ставрополь, ул. Северный обход, 7</p>
+            </address>
+          </div>
+          <div class="col-xl-3">
+            <address>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15">
+                  <defs />
+                  <path fill="#F0F6FA"
+                    d="M14.968 11.622c-.042-.128-.312-.316-.81-.564a24.75 24.75 0 00-.575-.32c-.248-.135-.474-.26-.676-.373a22.598 22.598 0 01-.57-.33 13.913 13.913 0 00-.266-.187 3 3 0 00-.379-.229.698.698 0 00-.303-.074c-.143 0-.32.101-.533.303a5.192 5.192 0 00-.586.661 6.411 6.411 0 01-.564.66c-.2.203-.363.304-.49.304a.723.723 0 01-.24-.053 2.494 2.494 0 01-.219-.09 3.968 3.968 0 01-.255-.15 6.52 6.52 0 00-.203-.122c-.973-.54-1.807-1.158-2.503-1.854C5.1 8.508 4.482 7.674 3.942 6.7a6.18 6.18 0 00-.123-.202 3.846 3.846 0 01-.149-.256 2.31 2.31 0 01-.09-.218.72.72 0 01-.054-.24c0-.127.102-.29.304-.49.202-.199.423-.387.66-.564.239-.178.459-.373.661-.586.202-.213.304-.39.304-.533 0-.099-.025-.2-.075-.303a2.961 2.961 0 00-.229-.379l-.186-.266a23.363 23.363 0 01-.33-.57 53.789 53.789 0 01-.374-.676c-.135-.249-.241-.44-.32-.575-.248-.497-.436-.767-.564-.81A.597.597 0 003.154 0a3.51 3.51 0 00-.752.107c-.309.07-.552.145-.73.223-.354.15-.73.583-1.129 1.3C.181 2.297 0 2.958 0 3.61c0 .192.012.378.037.56.025.18.07.385.134.612.063.227.115.396.154.506.039.11.112.307.218.591.107.284.17.458.192.522a9.65 9.65 0 00.884 1.865c.561.909 1.326 1.848 2.296 2.818.97.969 1.909 1.734 2.818 2.295a9.67 9.67 0 001.864.885c.064.02.238.085.522.191.284.107.482.18.592.219.11.039.278.09.505.154.228.064.432.109.613.134.181.024.368.037.56.037.653 0 1.314-.181 1.981-.543.717-.398 1.15-.774 1.3-1.13.078-.177.152-.42.223-.73.072-.308.107-.559.107-.75 0-.1-.01-.175-.032-.225z" />
+                </svg>
+              </span>
+              <p>8 (962) 445 84 54<br>пн-чт 8:00–17:00; пт: 8:00–16:00</p>
+            </address>
+          </div>
+          <div class="col-xl-2 ml-xl-auto footer__order">
+            <a href="#">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <div class="row">
+          <div class="col-xl-4">
+            <p>2019 (c) “AVVA Сантех” Все права защищены </p>
+          </div>
+          <div class="col-xl-3 ml-xl-auto copyright__link">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="30" fill="none" viewBox="0 0 38 30">
+                <defs />
+                <path fill="#A7C3D5" fill-rule="evenodd"
+                  d="M18.607 11.397l2.094 2.094 5.115 5.116 7.21-7.21-7.21-7.21-5.115 5.116-2.094 2.094-2.094-2.094-5.116-5.116-7.21 7.21 7.21 7.21 1.511-1.511 2.094-2.094 1.511-1.511 2.094-2.094zm0-4.187l-4.25-4.25h8.5l-4.25 4.25zM11.397 0L9.303 2.094l-7.21 7.21L0 11.396l2.094 2.094 7.21 7.21 2.093 2.09L18.607 30l2.094-2.094-7.21-7.205L15 19.186l7.21 7.21 2.094-2.09-7.21-7.21 1.512-1.515 5.116 5.12 2.093 2.09 2.094-2.09 7.21-7.21 2.09-2.094-2.09-2.094-7.21-7.21L25.816 0H11.397z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>design by ELIT</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
