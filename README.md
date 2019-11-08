@@ -8,6 +8,10 @@
 
 Страница категорий: 🖥️ https://ioinitid.github.io/santekh/category.html
 
+Страница товара: 🖥️ https://ioinitid.github.io/santekh/item.html
+
+Страница товара: 🖥️ https://ioinitid.github.io/santekh/item.html
+
 ------------
 
 Сделано с ❤️ в [WEB-ELITIT.RU](https://www.web-elitit.ru "Web-elitit.ru")
