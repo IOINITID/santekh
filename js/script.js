@@ -11,6 +11,31 @@ $('.navigation--full .navigation__item').mouseout(() => {
   $('.main__shadow').addClass('hide');
 });
 
+$('.sort__list--first .sort__item').mouseover(() => {
+  $('.sort__list--first .sort__list-inner').addClass('show');
+});
+
+$('.sort__list--first .sort__list-inner').mouseover(() => {
+  $('.sort__list--first .sort__list-inner').addClass('show');
+});
+
+$('.sort__list--first .sort__list-inner').mouseout(() => {
+  $('.sort__list--first .sort__list-inner').removeClass('show');
+});
+
+$('.sort__list--second .sort__item').mouseover(() => {
+  $('.sort__list--second .sort__list-inner').addClass('show');
+});
+
+$('.sort__list--second .sort__list-inner').mouseover(() => {
+  $('.sort__list--second .sort__list-inner').addClass('show');
+});
+
+$('.sort__list--second .sort__list-inner').mouseout(() => {
+  $('.sort__list--second .sort__list-inner').removeClass('show');
+});
+
+
 $('.slider-one').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
