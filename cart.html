@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -329,7 +330,7 @@
                 <a href="#">Личный кабинет</a>
               </div>
               <div class="col-xl-2 offset-xl-4 header__item header__item--order">
-                <a href="#">Заказать звонок</a>
+                <a href="#" data-toggle="modal" data-target="#modal-recall">Заказать звонок</a>
               </div>
               <div class="col-xl-2 header__item header__item--tel">
                 <a href="tel:+79624458454">8 (962) 445 84 54</a>
@@ -609,27 +610,22 @@
                       <div class="cart__contacts-wrapper contacts">
                         <label for="phone">
                           <span>Телефон для связи</span>
-                          <input type="number" name="phone" id="phone" placeholder="Поиск товаров на сайте...">
+                          <input type="number" name="phone" id="phone" placeholder="Поиск товаров на сайте..." required>
                         </label>
                       </div>
 
                       <div class="cart__address-wrapper">
-                        <div class="contacts">
+                        <div class="contacts contacts__address">
                           <label for="city">
-                            <span>Город / Населённый пункт</span>
-                            <input type="text" name="city" id="city" placeholder="Поиск товаров на сайте...">
-                          </label>
-                        </div>
-                        <div class="contacts">
-                          <label for="house">
-                            <span>Улица, дом</span>
-                            <input type="text" name="house" id="house" placeholder="Поиск товаров на сайте...">
+                            <span>Город / Населённый пункт, улица, дом</span>
+                            <input id="address" type="text" name="city" id="city"
+                              placeholder="Поиск товаров на сайте..." required>
                           </label>
                         </div>
                       </div>
 
                       <div class="cart__map">
-                        <iframe src=""></iframe>
+                        <div class="map" id="myMap"></div>
                       </div>
 
                       <h2 class="payment">Оплата заказа</h2>
@@ -657,7 +653,7 @@
                         </label>
                       </div>
 
-                      <div class="policy-wrapper">
+                      <div class="policy-wrapper" id="policy-confirm">
                         <label class="filter__label--checkbox" for="policy">
                           <input type="checkbox" name="policy" id="policy" required>
                           <span></span>
@@ -675,7 +671,6 @@
                   </div>
                 </div>
                 <div class="col-xl-3">
-
                   <div class="complete-order">
                     <div class="complete-top">
                       <div class="complete-link">
@@ -714,7 +709,6 @@
                     </div>
                     </form>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -781,12 +775,106 @@
     </div>
   </footer>
 
+  <div class="modal" id="modal-recall" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-recall">
+        <form id="form-contac-1" class="form-element" action="https://echo.htmlacademy.ru" method="get">
+          <div class="data data-recall">
+            <h3>Заказать звонок</h3>
+            <label for="name">
+              <span>Ваше имя</span>
+              <input type="text" name="name" id="name" placeholder="Поиск товаров на сайте...">
+            </label>
+            <label for="name">
+              <span>Телефон для связи</span>
+              <input type="number" name="tel" id="tel" placeholder="Телефон для связи">
+            </label>
+            <button class="data__send" type="submit">Отправить</button>
+            <div class="policy-text">
+              <p>Предложение не является публичной офертой. Цены на сайте и в розничной сети могут отличаться. Ссылка на
+                <a href="policy.html" target="_blank">политику конфиденциальности</a>.</p>
+            </div>
+          </div>
+          <div class="success" style="display: none;">
+            <button class="success__ok" type="button">Ок</button>
+          </div>
+        </form>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-warning" id="modal-warning" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-warning">
+        <div class="data data-warning">
+          <p>Необходимо принять пользовательское соглашение.</p>
+          <button class="close" data-dismiss="modal" type="button">Ок</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://api-maps.yandex.ru/2.0-stable/?apikey=13a1e10e-79ea-41f2-9d1a-9f197be07777&load=package.standard&lang=ru-RU"
+    type="text/javascript"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="js/script.js"></script>
   <script>
+  // yandex map api request
+var myMap;
+var search_result = [];
+ymaps.ready(function () {
+  myMap = new ymaps.Map("myMap", {
+    center: [55.76, 37.64],
+    zoom: 7,
+    behaviors: ['default', 'scrollZoom']
+  });
+  myMap.controls.add('zoomControl');
+});
+// yandex map autocomplete
+$(document).ready(function () {
+  $("#address").keyup(function () {
+    var search_query = $(this).val();
+    search_result = [];
+    $.getJSON('https://geocode-maps.yandex.ru/1.x/?format=json&apikey=13a1e10e-79ea-41f2-9d1a-9f197be07777&geocode=' + search_query,
+      function (data) {
+        for (var i = 0; i < data.response.GeoObjectCollection.featureMember.length; i++) {
+          search_result.push({
+            label: data.response.GeoObjectCollection.featureMember[i].GeoObject.description + ' - ' +
+              data.response.GeoObjectCollection.featureMember[i].GeoObject.name,
+            value: data.response.GeoObjectCollection.featureMember[i].GeoObject.description + ' - ' +
+              data.response.GeoObjectCollection.featureMember[i].GeoObject.name,
+            longlat: data.response.GeoObjectCollection.featureMember[i].GeoObject.Point.pos
+          });
+        }
+        $("#address").autocomplete({
+          source: search_result,
+          select: function (event, ui) {
+            console.log(ui.item);
+            var longlat = ui.item.longlat.split(" ");
+            var myPlacemark = new ymaps.Placemark([longlat[1], longlat[0]], {
+              balloonContentBody: ui.item.label,
+              hintContent: ui.item.label
+            });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.setCenter([longlat[1], longlat[0]], 18);
+          }
+        });
+      });
+  });
+
+  $.ui.autocomplete.filter = function (array, term) {
+    return $.grep(array, function (value) {
+      return value.label || value.value || value;
+    });
+  };
+
+});
 
   </script>
 </body>
