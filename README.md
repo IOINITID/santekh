@@ -8,6 +8,10 @@
 
 Страница категорий: 🖥️ https://ioinitid.github.io/santekh/category.html
 
+Страница товаров списком: 🖥️ https://ioinitid.github.io/santekh/list.html
+
+Страница товаров карточки: 🖥️ https://ioinitid.github.io/santekh/cards.html
+
 Страница товара: 🖥️ https://ioinitid.github.io/santekh/item.html
 
 Страница корзины: 🖥️ https://ioinitid.github.io/santekh/cart.html
