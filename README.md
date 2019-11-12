@@ -10,7 +10,7 @@
 
 Страница товара: 🖥️ https://ioinitid.github.io/santekh/item.html
 
-Страница товара: 🖥️ https://ioinitid.github.io/santekh/item.html
+Страница корзины: 🖥️ https://ioinitid.github.io/santekh/cart.html
 
 ------------
 
