@@ -2799,6 +2799,7 @@ input::-webkit-search-results-decoration {
   .content--full .slider a {
     height: 416px;
   }
+
   .widgets__price {
     flex-wrap: wrap;
   }
@@ -2806,12 +2807,21 @@ input::-webkit-search-results-decoration {
   .widgets__order a {
     width: 120px;
   }
+
   .widgets__price-wrapper {
     align-items: flex-end;
   }
 
   .header__item--order {
     margin-left: 0;
+  }
+
+  .catalog__item {
+    max-width: 275px;
+  }
+
+  .content--full .catalog__item {
+    max-width: 223px;
   }
 
 }
