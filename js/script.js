@@ -14,6 +14,7 @@ $('.navigation--full .navigation__item').mouseover(() => {
 // filter links hover
 $('.navigation--full .navigation__item').mouseout(() => {
   $('.main__shadow').addClass('hide');
+  $('.navigation__list navigation__list--inner').Class('hide');
 });
 // filter links hover
 $('.sort__list--first .sort__item').mouseover(() => {

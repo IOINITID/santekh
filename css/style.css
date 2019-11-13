@@ -3064,7 +3064,7 @@ input::-webkit-search-results-decoration {
     min-width: 40px;
   }
 
-  .fixed {
+  .content--full .fixed {
     position: fixed;
     z-index: 1;
     top: 90px;
