@@ -2890,7 +2890,7 @@ input::-webkit-search-results-decoration {
     padding: 0 10px;
   }
 
-  .help__icon:hover .help__text {
+  .filter .help__icon:hover .help__text {
     width: calc(100% - 20px);
     overflow: hidden;
   }
