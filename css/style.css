@@ -3071,8 +3071,16 @@ input::-webkit-search-results-decoration {
     max-width: 222px;
   }
 
+  .cart__map {
+    width: 889px;
+  }
+
   .content--full .cart__map {
     width: 720px;
+  }
+
+  .comments-wrapper textarea {
+    width: 889px;
   }
 
   .content--full .comments-wrapper textarea {
