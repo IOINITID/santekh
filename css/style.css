@@ -3060,7 +3060,7 @@ input::-webkit-search-results-decoration {
     margin: 0;
   }
 
-  .content--full .complete-middle ul li span {
+  .complete-middle ul li span {
     min-width: 40px;
   }
 
