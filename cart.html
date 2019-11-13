@@ -723,9 +723,9 @@
 
   <footer class="footer">
     <div class="container-fluid">
-      <div class="container">
+      <div class="container footer-container content--full">
         <div class="row">
-          <div class="col-xl-3">
+          <div class="col-xl">
             <address>
               <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" fill="none" viewBox="0 0 10 15">
@@ -737,7 +737,7 @@
               <p>355000, Ставропольский край,<br>г. Ставрополь, ул. Северный обход, 7</p>
             </address>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl">
             <address>
               <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15">
@@ -749,12 +749,12 @@
               <p>8 (962) 445 84 54<br>пн-чт 8:00–17:00; пт: 8:00–16:00</p>
             </address>
           </div>
-          <div class="col-xl-2 ml-xl-auto footer__order">
+          <div class="col-xl ml-xl-auto footer__order">
             <a href="#">Заказать звонок</a>
           </div>
         </div>
       </div>
-      <div class="container copyright">
+      <div class="container copyright content--full">
         <div class="row">
           <div class="col-xl-4">
             <p>2019 (c) “AVVA Сантех” Все права защищены </p>
@@ -825,56 +825,58 @@
   <script src="slick/slick.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-  // yandex map api request
-var myMap;
-var search_result = [];
-ymaps.ready(function () {
-  myMap = new ymaps.Map("myMap", {
-    center: [55.76, 37.64],
-    zoom: 7,
-    behaviors: ['default', 'scrollZoom']
-  });
-  myMap.controls.add('zoomControl');
-});
-// yandex map autocomplete
-$(document).ready(function () {
-  $("#address").keyup(function () {
-    var search_query = $(this).val();
-    search_result = [];
-    $.getJSON('https://geocode-maps.yandex.ru/1.x/?format=json&apikey=13a1e10e-79ea-41f2-9d1a-9f197be07777&geocode=' + search_query,
-      function (data) {
-        for (var i = 0; i < data.response.GeoObjectCollection.featureMember.length; i++) {
-          search_result.push({
-            label: data.response.GeoObjectCollection.featureMember[i].GeoObject.description + ' - ' +
-              data.response.GeoObjectCollection.featureMember[i].GeoObject.name,
-            value: data.response.GeoObjectCollection.featureMember[i].GeoObject.description + ' - ' +
-              data.response.GeoObjectCollection.featureMember[i].GeoObject.name,
-            longlat: data.response.GeoObjectCollection.featureMember[i].GeoObject.Point.pos
-          });
-        }
-        $("#address").autocomplete({
-          source: search_result,
-          select: function (event, ui) {
-            console.log(ui.item);
-            var longlat = ui.item.longlat.split(" ");
-            var myPlacemark = new ymaps.Placemark([longlat[1], longlat[0]], {
-              balloonContentBody: ui.item.label,
-              hintContent: ui.item.label
-            });
-            myMap.geoObjects.add(myPlacemark);
-            myMap.setCenter([longlat[1], longlat[0]], 18);
-          }
-        });
+    // yandex map api request
+    var myMap;
+    var search_result = [];
+    ymaps.ready(function () {
+      myMap = new ymaps.Map("myMap", {
+        center: [55.76, 37.64],
+        zoom: 7,
+        behaviors: ['default', 'scrollZoom']
       });
-  });
-
-  $.ui.autocomplete.filter = function (array, term) {
-    return $.grep(array, function (value) {
-      return value.label || value.value || value;
+      myMap.controls.add('zoomControl');
     });
-  };
+    // yandex map autocomplete
+    $(document).ready(function () {
+      $("#address").keyup(function () {
+        var search_query = $(this).val();
+        search_result = [];
+        $.getJSON(
+          'https://geocode-maps.yandex.ru/1.x/?format=json&apikey=13a1e10e-79ea-41f2-9d1a-9f197be07777&geocode=' +
+          search_query,
+          function (data) {
+            for (var i = 0; i < data.response.GeoObjectCollection.featureMember.length; i++) {
+              search_result.push({
+                label: data.response.GeoObjectCollection.featureMember[i].GeoObject.description + ' - ' +
+                  data.response.GeoObjectCollection.featureMember[i].GeoObject.name,
+                value: data.response.GeoObjectCollection.featureMember[i].GeoObject.description + ' - ' +
+                  data.response.GeoObjectCollection.featureMember[i].GeoObject.name,
+                longlat: data.response.GeoObjectCollection.featureMember[i].GeoObject.Point.pos
+              });
+            }
+            $("#address").autocomplete({
+              source: search_result,
+              select: function (event, ui) {
+                console.log(ui.item);
+                var longlat = ui.item.longlat.split(" ");
+                var myPlacemark = new ymaps.Placemark([longlat[1], longlat[0]], {
+                  balloonContentBody: ui.item.label,
+                  hintContent: ui.item.label
+                });
+                myMap.geoObjects.add(myPlacemark);
+                myMap.setCenter([longlat[1], longlat[0]], 18);
+              }
+            });
+          });
+      });
 
-});
+      $.ui.autocomplete.filter = function (array, term) {
+        return $.grep(array, function (value) {
+          return value.label || value.value || value;
+        });
+      };
+
+    });
 
   </script>
 </body>

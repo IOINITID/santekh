@@ -2778,3 +2778,40 @@ input::-webkit-search-results-decoration {
 .inactive {
   pointer-events: none !important;
 }
+
+@media (min-width: 1300px) and (max-width: 1919px) {
+  .content {
+    padding-left: 88px;
+  }
+
+  .header .container {
+    padding-left: 88px;
+  }
+
+  .footer .container {
+    padding-left: 88px;
+  }
+
+  .content--full {
+    padding-left: 295px !important;
+  }
+
+  .content--full .slider a {
+    height: 416px;
+  }
+  .widgets__price {
+    flex-wrap: wrap;
+  }
+
+  .widgets__order a {
+    width: 120px;
+  }
+  .widgets__price-wrapper {
+    align-items: flex-end;
+  }
+
+  .header__item--order {
+    margin-left: 0;
+  }
+
+}

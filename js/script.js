@@ -2,6 +2,10 @@
 $('.menu-button').on('click', () => {
   $('.navigation--full').toggleClass('hide');
   $('.navigation--short').toggleClass('show');
+  $('.content').toggleClass('content--full');
+  $('.header .container').toggleClass('content--full');
+  $('.footer-container').toggleClass('content--full');
+  $('.copyright').toggleClass('content--full');
 });
 // filter links hover
 $('.navigation--full .navigation__item').mouseover(() => {
@@ -37,7 +41,7 @@ $('.sort__list--second .sort__list-inner').mouseout(() => {
 });
 // agree check
 $('.complete-order button').on('click', () => {
-  if ($("#policy").attr("checked") == 'checked' || $("#phone").attr("value") !== '' || $("#phone").attr("value") !== '') {
+  if ($("#policy").attr("checked") == 'checked') {
     $('.complete-order button').submit(function () {});
   } else {
     // $('.modal-warning').addClass('show');
@@ -57,7 +61,7 @@ $('.data-warning .close').on('click', () => {
 $('.slider-one').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 5000,
   arrows: false,
   dots: true,
@@ -74,7 +78,7 @@ $('.slider-one').slick({
 $('.slider-two').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 5000,
   arrows: true,
   dots: false,
@@ -85,7 +89,7 @@ $('.slider-two').slick({
 $('.slider-three').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 5000,
   arrows: true,
   dots: false,
@@ -96,7 +100,7 @@ $('.slider-three').slick({
 $('.slider-four').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 5000,
   arrows: true,
   dots: false,
@@ -105,7 +109,7 @@ $('.slider-four').slick({
 });
 // slider-five element
 $('.slider-five').slick({
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 5000,
@@ -113,18 +117,6 @@ $('.slider-five').slick({
   dots: false,
   prevArrow: '.slider-five-prev',
   nextArrow: '.slider-five-next',
-});
-// filter two position range slider
-$(".slider").slider({
-  animate: "slow",
-  min: 0,
-  max: 50000,
-  range: true,
-  values: [10000, 30000],
-  slide: function (event, ui) {
-    $('#slider__value-from').val(ui.values[0]);
-    $('#slider__value-to').val(ui.values[1]);
-  }
 });
 // scroling to fixed
 $(window).scroll(function () {
