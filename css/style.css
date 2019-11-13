@@ -3071,6 +3071,13 @@ input::-webkit-search-results-decoration {
     max-width: 222px;
   }
 
+  .fixed {
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    max-width: 273px;
+  }
+
   .cart__map {
     width: 889px;
   }
