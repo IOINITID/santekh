@@ -35,6 +35,10 @@ body {
   color: #000000;
   background-color: #ffffff;
   position: relative;
+  /* flexy-blocks */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .visually-hidden {
@@ -290,6 +294,10 @@ body {
   /* height: 100%; */
 }
 
+.navigation__item .navigation__list--inner {
+  display: none;
+}
+
 .navigation__item:hover .navigation__list--inner,
 .navigation__item:focus .navigation__list--inner {
   display: block;
@@ -328,6 +336,8 @@ main {
 .content {
   width: 100%;
   padding: 30px 0;
+  /* flexy-blocks */
+  min-height: 100vh;
 }
 
 .page-navigation {
@@ -2672,7 +2682,7 @@ input::-webkit-search-results-decoration {
 
 .fixed {
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 90px;
   max-width: 295px;
 }
@@ -2853,6 +2863,25 @@ input::-webkit-search-results-decoration {
 
 .socials__list li {
   margin-right: 10px;
+}
+
+.footer__address-text {
+  color: #1f4e6a;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer__contacts-text {
+  color: #1f4e6a;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer__contacts-text a {
+  color: #1e222a;
+  font-weight: 700;
 }
 
 @media (min-width: 1300px) and (max-width: 1919px) {
@@ -3106,14 +3135,14 @@ input::-webkit-search-results-decoration {
 
   .content--full .fixed {
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     top: 90px;
     max-width: 222px;
   }
 
   .fixed {
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     top: 90px;
     max-width: 273px;
   }
@@ -3132,6 +3161,66 @@ input::-webkit-search-results-decoration {
 
   .content--full .comments-wrapper textarea {
     width: 720px;
+  }
+
+  .content--full .footer__address-text {
+    font-size: 15px;
+  }
+
+  .content--full .footer__contacts-text {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 1299px) {
+  .wrapper-navigation {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .main {
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .page-navigation {
+    display: none;
+  }
+
+  .slider a {
+    height: 100%;
+  }
+
+  .slider a img {
+    height: 100%;
+  }
+
+  .slider-one .slick-dots {
+    bottom: 15px;
+  }
+
+  .widgets__price-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .widgets__price {
+    margin-bottom: 10px;
+  }
+
+  .widgets__order {
+    width: 100%;
+  }
+
+  .widgets__order a {
+    width: 100%;
+  }
+
+  .slick-slide img {
+    margin: 0 auto;
   }
 
 }

@@ -10,11 +10,12 @@ $('.menu-button').on('click', () => {
 // filter links hover
 $('.navigation--full .navigation__item').mouseover(() => {
   $('.main__shadow').removeClass('hide');
+  // $('.navigation__list .navigation__list--inner').removeClass('hide');
 });
 // filter links hover
 $('.navigation--full .navigation__item').mouseout(() => {
   $('.main__shadow').addClass('hide');
-  $('.navigation__list navigation__list--inner').addClass('hide');
+  // $('.navigation__list .navigation__list--inner').addClass('hide');
 });
 // filter links hover
 $('.sort__list--first .sort__item').mouseover(() => {
@@ -66,14 +67,6 @@ $('.slider-one').slick({
   autoplaySpeed: 5000,
   arrows: false,
   dots: true,
-  // responsive: [{
-  //   breakpoint: 768,
-  //   settings: {
-  //     arrows: true,
-  //     slidesToShow: 1,
-  //     dots: false
-  //   }
-  // }]
 });
 // slider-two element
 $('.slider-two').slick({
@@ -85,6 +78,14 @@ $('.slider-two').slick({
   dots: false,
   prevArrow: '.slider-two-prev',
   nextArrow: '.slider-two-next',
+  responsive: [{
+    breakpoint: 1300,
+    settings: {
+      arrows: true,
+      slidesToShow: 1,
+      dots: false
+    }
+  }]
 });
 // slider-three element
 $('.slider-three').slick({
@@ -96,6 +97,14 @@ $('.slider-three').slick({
   dots: false,
   prevArrow: '.slider-three-prev',
   nextArrow: '.slider-three-next',
+  responsive: [{
+    breakpoint: 1300,
+    settings: {
+      arrows: true,
+      slidesToShow: 1,
+      dots: false
+    }
+  }]
 });
 // slider-four element
 $('.slider-four').slick({
@@ -107,17 +116,33 @@ $('.slider-four').slick({
   dots: false,
   prevArrow: '.slider-four-prev',
   nextArrow: '.slider-four-next',
+  responsive: [{
+    breakpoint: 1300,
+    settings: {
+      arrows: true,
+      slidesToShow: 1,
+      dots: false
+    }
+  }]
 });
 // slider-five element
 $('.slider-five').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 5000,
   arrows: true,
   dots: false,
   prevArrow: '.slider-five-prev',
   nextArrow: '.slider-five-next',
+  responsive: [{
+    breakpoint: 1300,
+    settings: {
+      arrows: true,
+      slidesToShow: 1,
+      dots: false
+    }
+  }]
 });
 // scroling to fixed
 $(window).scroll(function () {
