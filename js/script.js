@@ -42,9 +42,11 @@ $('.sort__list--second .sort__list-inner').mouseout(() => {
   $('.sort__list--second .sort__list-inner').removeClass('show');
 });
 //agree check
-document.querySelector('.filter__label--checkbox input').addEventListener('click', function () {
-  document.querySelector('.filter__label--checkbox input').classList.toggle('filter__checkbox');
-});
+if (document.querySelector('.filter__label--checkbox input')) {
+  document.querySelector('.filter__label--checkbox input').addEventListener('click', function () {
+    document.querySelector('.filter__label--checkbox input').classList.toggle('filter__checkbox');
+  });
+}
 // agree check
 $('.complete-order button').on('click', () => {
   if ($('#policy').hasClass('filter__checkbox')) {
