@@ -41,12 +41,15 @@ $('.sort__list--second .sort__list-inner').mouseover(() => {
 $('.sort__list--second .sort__list-inner').mouseout(() => {
   $('.sort__list--second .sort__list-inner').removeClass('show');
 });
+//agree check
+document.querySelector('.filter__label--checkbox input').addEventListener('click', function () {
+  document.querySelector('.filter__label--checkbox input').classList.toggle('filter__checkbox');
+});
 // agree check
 $('.complete-order button').on('click', () => {
-  if ($("#policy").attr("checked") == 'checked') {
-    $('.complete-order button').submit(function () {});
+  if ($('#policy').hasClass('filter__checkbox')) {
+    $(this).submit(function () {});
   } else {
-    // $('.modal-warning').addClass('show');
     $('.modal-warning').modal('show');
     $('body').addClass('inactive');
   }
