@@ -83,14 +83,14 @@ $('.slider-two').slick({
   dots: false,
   prevArrow: '.slider-two-prev',
   nextArrow: '.slider-two-next',
-  responsive: [{
-    breakpoint: 1300,
-    settings: {
-      arrows: true,
-      slidesToShow: 1,
-      dots: false
-    }
-  }]
+  // responsive: [{
+  //   breakpoint: 1300,
+  //   settings: {
+  //     arrows: true,
+  //     slidesToShow: 1,
+  //     dots: false
+  //   }
+  // }]
 });
 // slider-three element
 $('.slider-three').slick({
@@ -102,14 +102,14 @@ $('.slider-three').slick({
   dots: false,
   prevArrow: '.slider-three-prev',
   nextArrow: '.slider-three-next',
-  responsive: [{
-    breakpoint: 1300,
-    settings: {
-      arrows: true,
-      slidesToShow: 1,
-      dots: false
-    }
-  }]
+  // responsive: [{
+  //   breakpoint: 1300,
+  //   settings: {
+  //     arrows: true,
+  //     slidesToShow: 1,
+  //     dots: false
+  //   }
+  // }]
 });
 // slider-four element
 $('.slider-four').slick({
@@ -121,14 +121,14 @@ $('.slider-four').slick({
   dots: false,
   prevArrow: '.slider-four-prev',
   nextArrow: '.slider-four-next',
-  responsive: [{
-    breakpoint: 1300,
-    settings: {
-      arrows: true,
-      slidesToShow: 1,
-      dots: false
-    }
-  }]
+  // responsive: [{
+  //   breakpoint: 1300,
+  //   settings: {
+  //     arrows: true,
+  //     slidesToShow: 1,
+  //     dots: false
+  //   }
+  // }]
 });
 // slider-five element
 $('.slider-five').slick({
@@ -140,14 +140,14 @@ $('.slider-five').slick({
   dots: false,
   prevArrow: '.slider-five-prev',
   nextArrow: '.slider-five-next',
-  responsive: [{
-    breakpoint: 1300,
-    settings: {
-      arrows: true,
-      slidesToShow: 1,
-      dots: false
-    }
-  }]
+  // responsive: [{
+  //   breakpoint: 1300,
+  //   settings: {
+  //     arrows: true,
+  //     slidesToShow: 1,
+  //     dots: false
+  //   }
+  // }]
 });
 // scroling to fixed
 $(window).scroll(function () {
