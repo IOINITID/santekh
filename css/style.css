@@ -3173,7 +3173,7 @@ input::-webkit-search-results-decoration {
 
 }
 
-@media (max-width: 1299px) {
+/* @media (max-width: 1299px) {
   .wrapper-navigation {
     display: none;
   }
@@ -3223,4 +3223,4 @@ input::-webkit-search-results-decoration {
     margin: 0 auto;
   }
 
-}
+} */
