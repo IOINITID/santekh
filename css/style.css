@@ -2888,6 +2888,10 @@ input::-webkit-search-results-decoration {
   display: none;
 }
 
+.pagination-mobile {
+  display: none;
+}
+
 @media (min-width: 1300px) and (max-width: 1919px) {
   .content {
     padding-left: 88px;
@@ -3484,8 +3488,12 @@ input::-webkit-search-results-decoration {
     margin-top: 25px;
   }
 
-  .footer {
+  .footer-mobile {
     padding: 20px 0;
+  }
+
+  .footer {
+    display: none;
   }
 
   .header-mobile {
@@ -3493,6 +3501,135 @@ input::-webkit-search-results-decoration {
     top: 0;
     left: 0;
     z-index: 2;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  .list-wrapper__sort {
+    display: none;
+  }
+
+  .goods {
+    display: none;
+  }
+
+  .filter-wrapper {
+    display: none;
+  }
+
+  .goods-mobile__item {
+    display: flex;
+    border-top: 1px solid #f0f6fa;
+    padding: 15px 0;
+  }
+
+  .goods-mobile__available {
+    color: #95a7b2;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 45px;
+  }
+
+  .goods-mobile__available .available,
+  .goods-mobile__available .unavailable {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .goods-mobile__available .available::before {
+    content: "";
+    background-image: url("../img/instock-icon.svg");
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .goods-mobile__available .unavailable::before {
+    content: "";
+    background-image: url("../img/outofstock-icon.svg");
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .goods-mobile__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .goods-mobile__info h3 {
+    color: #1e222a;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .goods-mobile__info .goods-mobile__price {
+    display: flex;
+    align-items: center;
+  }
+
+  .goods-mobile__info .goods-mobile__price span {
+    color: #1e222a;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .goods-mobile__info .goods-mobile__price del {
+    color: #95a7b2;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+  }
+
+  .goods-mobile__info .goods-mobile__price .discount-price {
+    color: #f15555;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+
+  .goods-mobile__image {
+    margin-right: 20px;
+  }
+
+  .goods-mobile__available p {
+    color: #95a7b2;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .goods-mobile__available {
+    margin-bottom: 20px;
+  }
+
+  .pagination-large {
+    display: none;
+  }
+
+  .pagination-mobile {
+    display: block;
+    margin-bottom: 45px;
+  }
+
+  .list-wrapper h2 {
+    margin-bottom: 20px;
+  }
+
+  .filter-mobile button {
+    color: #174e83;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 46px;
+    border-radius: 6px;
+    border: 2px solid #174e83;
+    background-color: #ffffff;
+    margin-bottom: 30px;
   }
 
 }
