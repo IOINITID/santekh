@@ -58,8 +58,16 @@ $('.feature__mobile-show-more').clickToggle(function () {
     $('.feature__mobile').addClass('feature__mobile--hide');
     $('.feature__mobile-show-more').text('Показать ещё...');
   });
-
-
+// list filter show
+$('.filter-mobile button').on('click', () => {
+  $('.filter-mobile__form').removeClass('hide');
+  $('.main__shadow').removeClass('hide');
+});
+// list filter close
+$('.filter-mobile-close').on('click', () => {
+  $('.filter-mobile__form').addClass('hide');
+  $('.main__shadow').addClass('hide');
+});
 // filter links hover
 $('.sort__list--first .sort__list-inner').mouseover(() => {
   $('.sort__list--first .sort__list-inner').addClass('show');

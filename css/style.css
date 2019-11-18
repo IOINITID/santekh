@@ -366,7 +366,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 
 .form--search {
@@ -3821,7 +3821,7 @@ input::-webkit-search-results-decoration {
     align-items: center;
     width: 100px;
     height: 30px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
 
   .logo-mobile img {
@@ -4418,6 +4418,58 @@ input::-webkit-search-results-decoration {
 
   .modal-mobile ul li .call-link {
     background-color: #d0796d;
+  }
+
+  .filter-mobile__form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    z-index: 3;
+    border: none;
+    border-radius: 0;
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .filter-mobile-wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filter-mobile__form h2 {
+    color: #174e83;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .filter-mobile__form button {
+    background-color: #ffffff;
+    border: none;
+  }
+
+  .filter-mobile__form .help__text {
+    padding: 5px;
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .filter-mobile__form .ui-slider.ui-slider-horizontal {
+    width: 100%;
+  }
+
+  .filter-mobile__form .filter__send button {
+    height: 38px;
+    border-radius: 6px;
+    background-color: #2a6b93;
+    color: #ffffff;
+    font-family: "PT Root UI";
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
   }
 
 }
