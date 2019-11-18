@@ -213,3 +213,7 @@ $('.filter__show-more-mobile').clickToggle(function () {
     $('.filter-list-hide--mobile').removeClass('filter-list-show--mobile');
     $('.filter__show-more-mobile').text('Показать ещё...');
   });
+
+  $('.search-mobile').on('click', () => {
+    $('.search-mobile-wrapper').removeClass('hide');
+  });
