@@ -4099,14 +4099,14 @@ input::-webkit-search-results-decoration {
   }
 
   .list-wrapper-mobile__cart .minus {
-    width: 32px;
-    height: 32px;
+    width: 100%;
+    height: 100%;
     margin-right: 3px;
   }
 
   .list-wrapper-mobile__cart .plus {
-    width: 32px;
-    height: 32px;
+    width: 100%;
+    height: 100%;
     margin-left: 3px;
   }
 
