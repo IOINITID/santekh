@@ -3577,6 +3577,7 @@ input::-webkit-search-results-decoration {
   .goods-mobile__info .goods-mobile__price {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
 
   .goods-mobile__info .goods-mobile__price span {
@@ -3740,13 +3741,43 @@ input::-webkit-search-results-decoration {
   }
 
   .sort-mobile__item-inner {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   .sort-mobile__item-inner a {
     color: #1f4e6a;
     font-size: 16px;
     font-weight: 400;
+  }
+
+  .info-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .info-mobile .info-item {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 5px;
+    height: 20px;
+    border-radius: 0 6px 0 6px;
+  }
+
+  .info-mobile .info-item--new {
+    background-color: #5bd098;
+  }
+
+  .info-mobile .info-item--hits {
+    background-color: #9c77d8;
+  }
+
+  .info-mobile .info-item--sale {
+    background-color: #f15555;
   }
 
 }
