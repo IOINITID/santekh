@@ -4021,4 +4021,16 @@ input::-webkit-search-results-decoration {
     justify-content: center;
   }
 
+  .feature__mobile td {
+    position: relative;
+  }
+
+  .feature__mobile .help__icon {
+    position: unset;
+  }
+
+  .feature__mobile .help__text {
+    left: -5px;
+  }
+
 }

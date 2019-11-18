@@ -52,9 +52,11 @@ $('.sort-mobile__list--second .sort-mobile__item a').clickToggle(function () {
 // item feature show
 $('.feature__mobile-show-more').clickToggle(function () {
     $('.feature__mobile').removeClass('feature__mobile--hide');
+    $('.feature__mobile-show-more').text('Скрыть...');
   },
   function () {
     $('.feature__mobile').addClass('feature__mobile--hide');
+    $('.feature__mobile-show-more').text('Показать ещё...');
   });
 
 
