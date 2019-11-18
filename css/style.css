@@ -4305,4 +4305,119 @@ input::-webkit-search-results-decoration {
     padding-bottom: 40px;
   }
 
+  .modal-mobile .modal-dialog-mobile {
+    margin: 100px auto 0 auto;
+  }
+
+  .modal-mobile .data-recall {
+    padding: 20px;
+    min-height: 450px;
+    padding-top: 60px;
+  }
+
+  .modal-mobile.show .modal-dialog {
+    width: 280px;
+  }
+
+  .modal-mobile .data-recall h3 {
+    color: #1e232a;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+
+  .modal-mobile .data-recall label input {
+    height: 50px;
+    border-radius: 6px;
+    background-color: #f0f6fa;
+    color: #95a7b2;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0;
+    text-align: center;
+    border: none;
+  }
+
+  .modal-mobile .data-recall label input::placeholder {
+    color: #95a7b2;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0;
+    text-align: center;
+    border: none;
+  }
+
+  .modal-mobile .data__send {
+    height: 50px;
+    border-radius: 6px;
+    background-color: #174e83;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .modal-mobile .policy-text p {
+    color: #95a7b2;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .modal-mobile .form-element {
+    position: relative;
+  }
+
+  .modal-mobile .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .modal-mobile .modal-dialog-mobile .modal-mobile {
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .modal-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+  }
+
+  .modal-mobile ul li {
+    margin-bottom: 40px;
+  }
+
+  .modal-mobile ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .modal-mobile ul li .telegram-link {
+    background-color: #039be5;
+  }
+
+  .modal-mobile ul li .whatsup-link {
+    background-color: #7ad06d;
+  }
+
+  .modal-mobile ul li .recall-link {
+    background-color: #174e83;
+  }
+
+  .modal-mobile ul li .call-link {
+    background-color: #d0796d;
+  }
+
 }
