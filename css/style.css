@@ -4472,4 +4472,8 @@ input::-webkit-search-results-decoration {
     border: none;
   }
 
+  .filter-mobile__form .filter__slider input {
+    width: 100%;
+  }
+
 }
