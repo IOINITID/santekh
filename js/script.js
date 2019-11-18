@@ -42,13 +42,22 @@ $('.sort-mobile__list--first .sort-mobile__item a').clickToggle(function () {
   function () {
     $('.sort-mobile__list--first .sort-mobile__list-inner').removeClass('show');
   });
-  // filter links second active
+// filter links second active
 $('.sort-mobile__list--second .sort-mobile__item a').clickToggle(function () {
-  $('.sort-mobile__list--second .sort-mobile__list-inner').addClass('show');
-},
-function () {
-  $('.sort-mobile__list--second .sort-mobile__list-inner').removeClass('show');
-});
+    $('.sort-mobile__list--second .sort-mobile__list-inner').addClass('show');
+  },
+  function () {
+    $('.sort-mobile__list--second .sort-mobile__list-inner').removeClass('show');
+  });
+// item feature show
+$('.feature__mobile-show-more').clickToggle(function () {
+    $('.feature__mobile').removeClass('feature__mobile--hide');
+  },
+  function () {
+    $('.feature__mobile').addClass('feature__mobile--hide');
+  });
+
+
 // filter links hover
 $('.sort__list--first .sort__list-inner').mouseover(() => {
   $('.sort__list--first .sort__list-inner').addClass('show');
