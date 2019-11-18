@@ -764,7 +764,7 @@
             </div>
           </section>
 
-          <section class="list-wrapper-mobile__cart">
+          <section class="list-wrapper-mobile__cart" style="display: none;">
             <h2>Корзина</h2>
             <ul class="goods-mobile__list">
 
@@ -953,6 +953,86 @@
               в отправляемом в ответ на заявку счете</p>
 
             <button class="cart-mobile-price-total-next" type="button">Далее</button>
+
+          </section>
+
+          <section class="list-wrapper-mobile__order">
+            <h2>Оформление заказа</h2>
+            <h3>Доставка</h3>
+            <div class="cart__delivery-wrapper">
+              <label class="delivery-one" for="delivery-mobile-one">
+                <input type="radio" name="delivery" id="delivery-mobile-one" value="Доставка" checked>
+                <span>Доставка</span>
+              </label>
+              <label class="delivery-two" for="delivery-mobile-two">
+                <input type="radio" name="delivery" id="delivery-mobile-two" value="Самовывоз">
+                <span>Самовывоз</span>
+              </label>
+            </div>
+            <p class="list-wrapper-mobile__order-info-text">Стоимость выдачи на пункте самовывоза составляет 200 руб. за
+              каждые 10 кг и в пределах габаритов 1х1 метр</p>
+
+            <div class="cart__contacts-wrapper contacts">
+              <label for="phone">
+                <span>Телефон для связи</span>
+                <input type="number" name="phone" id="phone" placeholder="Поиск товаров на сайте..." value="" required>
+              </label>
+            </div>
+
+            <div class="cart__address-wrapper">
+              <div class="contacts contacts__address">
+                <label for="address">
+                  <span>Город / Населённый пункт, улица, дом</span>
+                  <input id="address" type="text" name="city" placeholder="Поиск товаров на сайте..." value="" required>
+                </label>
+              </div>
+            </div>
+
+            <div class="cart__map">
+              <div class="map" id="myMapMobile"></div>
+            </div>
+
+            <h3>Оплата заказа</h3>
+
+            <div class="payment-wrapper">
+              <label class="payment-one" for="payment-mobile-one">
+                <input type="radio" name="payment" id="payment-mobile-one" value="Наличными при получении" checked>
+                <span>Наличными при получении</span>
+              </label>
+              <label class="payment-two" for="payment-mobile-two">
+                <input type="radio" name="payment" id="payment-mobile-two" value="Картой при получении">
+                <span>Картой при получении</span>
+              </label>
+              <label class="payment-three" for="payment-mobile-three">
+                <input type="radio" name="payment" id="payment-mobile-three" value="Онлайн-оплата">
+                <span>Онлайн-оплата</span>
+              </label>
+            </div>
+
+            <h3>Комментарий к заказу</h3>
+
+            <div class="comments-wrapper">
+              <label for="text">
+                <textarea name="text" id="text" placeholder="Поиск товаров на сайте..."></textarea>
+              </label>
+            </div>
+
+            <div class="policy-wrapper" id="policy-confirm">
+              <label class="filter__label--checkbox" for="policy-mobile">
+                <input class="" type="checkbox" name="policy" id="policy-mobile">
+                <span></span>
+              </label>
+
+              <div class="policy-text">
+                <p>Предложение не является публичной офертой. Цены на сайте и в розничной сети могут
+                  отличаться. Информация на сайте о товаре носит рекламный характер и расценивается как
+                  приглашение делать оферты на основании п.1 ст. 437 Гражданского кодекса РФ.</p>
+                <p>Нажимая кнопку «Оформить заказ», Вы принимаете пользовательское соглашение</p>
+              </div>
+
+            </div>
+
+            <button class="cart-mobile-price-total-next" type="submit">Оформить заказаз</button>
 
           </section>
 
