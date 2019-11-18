@@ -3345,6 +3345,7 @@ input::-webkit-search-results-decoration {
     top: 20px;
     right: 20px;
     text-align: right;
+    height: 25px;
   }
 
   .slider-one .slick-dots li {
@@ -3488,12 +3489,13 @@ input::-webkit-search-results-decoration {
     margin-top: 25px;
   }
 
-  .footer-mobile {
-    padding: 20px 0;
-  }
-
   .footer {
     display: none;
+  }
+
+  .footer-mobile {
+    display: block;
+    padding: 20px 0;
   }
 
   .header-mobile {
