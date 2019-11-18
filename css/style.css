@@ -3527,6 +3527,10 @@ input::-webkit-search-results-decoration {
     padding: 15px 0;
   }
 
+  .goods-mobile__item:last-child {
+    border-bottom: 1px solid #f0f6fa;
+  }
+
   .goods-mobile__available {
     color: #95a7b2;
     font-size: 14px;
@@ -3632,6 +3636,115 @@ input::-webkit-search-results-decoration {
     border: 2px solid #174e83;
     background-color: #ffffff;
     margin-bottom: 30px;
+  }
+
+  .goods-mobile {
+    margin-bottom: 30px;
+  }
+
+  .filter__show-more-mobile {
+    color: #04b2d9;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 2px solid #f0f6fa;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    text-decoration: none;
+    margin-bottom: 25px;
+  }
+
+  .filter__show-more-mobile:hover,
+  .filter__show-more-mobile:focus,
+  .filter__show-more-mobile:active {
+    text-decoration: none;
+    color: #04b2d9;
+  }
+
+  .filter-list-hide--mobile {
+    max-height: 65px;
+    overflow: hidden;
+  }
+
+  .filter-list-show--mobile {
+    max-height: unset;
+    overflow: unset;
+  }
+
+  .sort-mobile {
+    margin-bottom: 40px;
+  }
+
+  .sort-mobile-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .sort-mobile__title {
+    color: #95a7b2;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 10px;
+  }
+
+  .sort-mobile__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sort-mobile__item a {
+    color: #1f4e6a;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .sort-mobile__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .sort-mobile__item::after {
+    content: "";
+    width: 8px;
+    height: 4px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: #1f4e6a transparent transparent transparent;
+    margin-left: 5px;
+  }
+
+  .sort-mobile__list-inner {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    padding: 10px;
+    width: max-content;
+    background-color: #ffffff;
+    border: 1px solid #90b8d3;
+    display: none;
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .sort-mobile__item-inner {
+    margin-bottom: 5px;
+  }
+
+  .sort-mobile__item-inner a {
+    color: #1f4e6a;
+    font-size: 14px;
+    font-weight: 400;
   }
 
 }

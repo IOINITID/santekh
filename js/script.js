@@ -1,3 +1,17 @@
+// toggle click
+(function ($) {
+  $.fn.clickToggle = function (func1, func2) {
+    var funcs = [func1, func2];
+    this.data('toggleclicked', 0);
+    this.click(function () {
+      var data = $(this).data();
+      var tc = data.toggleclicked;
+      $.proxy(funcs[tc], this)();
+      data.toggleclicked = (tc + 1) % 2;
+    });
+    return this;
+  };
+}(jQuery));
 // toggle menu button
 $('.menu-button').on('click', () => {
   $('.navigation--full').toggleClass('hide');
@@ -20,6 +34,20 @@ $('.navigation--full .navigation__item').mouseout(() => {
 // filter links hover
 $('.sort__list--first .sort__item').mouseover(() => {
   $('.sort__list--first .sort__list-inner').addClass('show');
+});
+// filter links first active
+$('.sort-mobile__list--first .sort-mobile__item a').clickToggle(function () {
+    $('.sort-mobile__list--first .sort-mobile__list-inner').addClass('show');
+  },
+  function () {
+    $('.sort-mobile__list--first .sort-mobile__list-inner').removeClass('show');
+  });
+  // filter links second active
+$('.sort-mobile__list--second .sort-mobile__item a').clickToggle(function () {
+  $('.sort-mobile__list--second .sort-mobile__list-inner').addClass('show');
+},
+function () {
+  $('.sort-mobile__list--second .sort-mobile__list-inner').removeClass('show');
 });
 // filter links hover
 $('.sort__list--first .sort__list-inner').mouseover(() => {
@@ -157,3 +185,12 @@ $(window).scroll(function () {
     $('.complete-order').removeClass('fixed');
   }
 });
+// filter list
+$('.filter__show-more-mobile').clickToggle(function () {
+    $('.filter-list-hide--mobile').addClass('filter-list-show--mobile');
+    $('.filter__show-more-mobile').text('Скрыть...');
+  },
+  function () {
+    $('.filter-list-hide--mobile').removeClass('filter-list-show--mobile');
+    $('.filter__show-more-mobile').text('Показать ещё...');
+  });
