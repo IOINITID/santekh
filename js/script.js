@@ -58,16 +58,6 @@ $('.feature__mobile-show-more').clickToggle(function () {
     $('.feature__mobile').addClass('feature__mobile--hide');
     $('.feature__mobile-show-more').text('Показать ещё...');
   });
-// list filter show
-// $('.filter-mobile button').on('click', () => {
-//   $('.filter-mobile__form').removeClass('hide');
-//   $('.main__shadow').removeClass('hide');
-// });
-// list filter close
-// $('.filter-mobile-close').on('click', () => {
-//   $('.filter-mobile__form').addClass('hide');
-//   $('.main__shadow').addClass('hide');
-// });
 // filter links hover
 $('.sort__list--first .sort__list-inner').mouseover(() => {
   $('.sort__list--first .sort__list-inner').addClass('show');
@@ -213,11 +203,7 @@ $('.filter__show-more-mobile').clickToggle(function () {
     $('.filter-list-hide--mobile').removeClass('filter-list-show--mobile');
     $('.filter__show-more-mobile').text('Показать ещё...');
   });
-
-$('.search-mobile').on('click', () => {
-  $('.search-mobile-wrapper').removeClass('hide');
-});
-
+// mobile cart scroll
 $('.button-next-mobile').on('click', () => {
   $('.list-wrapper-mobile__cart').addClass('hide');
   $('.list-wrapper-mobile__order').removeClass('hide');
@@ -225,12 +211,7 @@ $('.button-next-mobile').on('click', () => {
     scrollTop: $('.header').offset().top
   }, 1000);
 });
-
-$('.search-mobile-wrapper-close').on('click', () => {
-  $('.search-mobile-wrapper').addClass('hide');
-});
-
-
+// mobile menu init
 document.addEventListener(
   "DOMContentLoaded", () => {
     const node = document.querySelector("#my-menu");
@@ -247,11 +228,11 @@ document.addEventListener(
       });
   }
 );
-
+// input mobile text hide
 $('.modal-mobile .data-recall label input').on('focus', () => {
   $('.modal-mobile .data-recall label input').attr("placeholder", "").placeholder();
 });
-
+// input mobile text show
 $('.modal-mobile .data-recall label input').on('focusout', () => {
   $('.modal-mobile .data-recall label input').attr("placeholder", "Номер телефона").placeholder();
 });
