@@ -4723,4 +4723,12 @@ input::-webkit-search-results-decoration {
     margin: 0;
   }
 
+  .list-wrapper-mobile__order .contacts input {
+    height: 50px;
+  }
+
+  .list-wrapper-mobile__order .payment-wrapper label {
+    margin-bottom: 20px;
+  }
+
 }
