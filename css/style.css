@@ -3834,7 +3834,7 @@ input::-webkit-search-results-decoration {
   }
 
   .feature__mobile--hide {
-    max-height: 150px;
+    max-height: 170px;
     overflow: hidden;
   }
 
@@ -3859,7 +3859,7 @@ input::-webkit-search-results-decoration {
 
   .feature__mobile td:first-child {
     color: #95a7b2;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
   }
 
