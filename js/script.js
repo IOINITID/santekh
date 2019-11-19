@@ -59,15 +59,15 @@ $('.feature__mobile-show-more').clickToggle(function () {
     $('.feature__mobile-show-more').text('Показать ещё...');
   });
 // list filter show
-$('.filter-mobile button').on('click', () => {
-  $('.filter-mobile__form').removeClass('hide');
-  $('.main__shadow').removeClass('hide');
-});
+// $('.filter-mobile button').on('click', () => {
+//   $('.filter-mobile__form').removeClass('hide');
+//   $('.main__shadow').removeClass('hide');
+// });
 // list filter close
-$('.filter-mobile-close').on('click', () => {
-  $('.filter-mobile__form').addClass('hide');
-  $('.main__shadow').addClass('hide');
-});
+// $('.filter-mobile-close').on('click', () => {
+//   $('.filter-mobile__form').addClass('hide');
+//   $('.main__shadow').addClass('hide');
+// });
 // filter links hover
 $('.sort__list--first .sort__list-inner').mouseover(() => {
   $('.sort__list--first .sort__list-inner').addClass('show');
@@ -237,17 +237,25 @@ document.addEventListener(
     const menu = new MmenuLight(node, {
       title: "",
     });
-
     menu.enable("(max-width: 600px)");
     menu.offcanvas();
-
-    document.querySelector("a[href='#my-menu']")
+    document.querySelector(".menu-mobile")
       .addEventListener("click", (evnt) => {
         menu.open();
-
-        //    Don't forget to "preventDefault" and to "stopPropagation".
         evnt.preventDefault();
         evnt.stopPropagation();
       });
   }
 );
+
+$('.modal-mobile .data-recall label input').on('focus', () => {
+  $('.modal-mobile .data-recall label input').attr("placeholder", "").placeholder();
+});
+
+$('.modal-mobile .data-recall label input').on('focusout', () => {
+  $('.modal-mobile .data-recall label input').attr("placeholder", "Номер телефона").placeholder();
+});
+
+$('.search-mobile').on('click', () => {
+  $('.modal-search.show form label input').focus();
+});

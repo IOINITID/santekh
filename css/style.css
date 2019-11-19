@@ -3327,6 +3327,7 @@ input::-webkit-search-results-decoration {
     right: 20px;
     text-align: right;
     height: 25px;
+    width: auto;
   }
 
   .slider-one .slick-dots li {
@@ -3366,6 +3367,7 @@ input::-webkit-search-results-decoration {
     right: 0;
     text-align: right;
     height: 25px;
+    width: auto;
   }
 
   .slider-widgets .slick-dots li {
@@ -4478,7 +4480,7 @@ input::-webkit-search-results-decoration {
   .navigation__mobile-menu .navigation__item-wrapper p {
     margin: 0;
     color: #1f4e6a;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 1;
   }
@@ -4593,13 +4595,15 @@ input::-webkit-search-results-decoration {
     position: relative;
   }
 
-  .search-mobile__list li::before {
+  .search-mobile__list li a::before {
     content: "";
     background-image: url("../img/search-mobile-list-icon.svg");
     background-repeat: no-repeat;
     width: 18px;
     height: 18px;
     margin-right: 20px;
+    background-size: 80%;
+    background-position: 50% 50%;
   }
 
   .search-mobile__list span {
@@ -4636,6 +4640,87 @@ input::-webkit-search-results-decoration {
 
   .filter-mobile {
     display: block;
+  }
+
+  .filter-mobile__form .filter__legend {
+    font-size: 15px;
+  }
+
+  .filter-mobile__form .filter__label {
+    font-size: 15px;
+  }
+
+  .filter-mobile__form .filter__dots {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .filter-mobile__form .slider__line {
+    margin-top: 10px;
+  }
+
+  .filter-mobile__form .ui-slider .ui-slider-handle {
+    width: 30px;
+    height: 30px;
+    border: 10px solid #04b2d9;
+    top: -15px;
+  }
+
+  .modal-form.show .modal-dialog {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .modal-search form {
+    background-color: #f0f6fa;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .modal-search form label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .modal-search form label svg {
+    margin-right: 20px;
+  }
+
+  .modal-search form label input {
+    border: none;
+    background-color: #f0f6fa;
+  }
+
+  .modal-search .search-mobile__history {
+    padding: 20px;
+    background-color: #ffffff;
+    height: 60px;
+  }
+
+  .modal-search .search-mobile__list {
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  .modal-search .search-mobile__list li {
+    height: 50px;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  .modal-search .search-mobile__list li a {
+    font-size: 15px;
+    color: #95a7b2;
+    position: unset;
+    justify-content: flex-start;
+    margin: 0;
   }
 
 }
