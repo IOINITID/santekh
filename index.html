@@ -17,7 +17,7 @@
 
 <body>
 
-  <div id="my-page">
+  <div class="mobile-menu-wrapper" id="my-page">
 
     <div id="my-header">
       <nav class="navigation__mobile-menu" id="my-menu">
@@ -162,7 +162,86 @@
 
   </div>
 
-  <div class="search-mobile-wrapper hide"></div>
+  <div class="search-mobile-wrapper hide">
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <label for="search-mobile">
+        <input type="search" name="search" id="search-mobile" placeholder="Искать на сайте">
+      </label>
+      <a class="search-mobile-wrapper-close" href="#">Отмена</a>
+    </form>
+    <div class="search-mobile__history">
+      <h3>История</h3>
+      <a href="#">Очистить</a>
+    </div>
+    <ul class="search-mobile__list">
+      <li>
+        <span>Запрос 1</span>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+            <defs />
+            <path fill="#c4c4c4" d="M.883 2.948A1.455 1.455 0 112.941.89l6.17 6.171A1.455 1.455 0 117.055 9.12z" />
+            <path fill="#c4c4c4" d="M7.061.888A1.455 1.455 0 119.12 2.946l-6.171 6.17A1.455 1.455 0 11.89 7.06z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <span>Запрос 2</span>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+            <defs />
+            <path fill="#c4c4c4" d="M.883 2.948A1.455 1.455 0 112.941.89l6.17 6.171A1.455 1.455 0 117.055 9.12z" />
+            <path fill="#c4c4c4" d="M7.061.888A1.455 1.455 0 119.12 2.946l-6.171 6.17A1.455 1.455 0 11.89 7.06z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <span>Запрос 3</span>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+            <defs />
+            <path fill="#c4c4c4" d="M.883 2.948A1.455 1.455 0 112.941.89l6.17 6.171A1.455 1.455 0 117.055 9.12z" />
+            <path fill="#c4c4c4" d="M7.061.888A1.455 1.455 0 119.12 2.946l-6.171 6.17A1.455 1.455 0 11.89 7.06z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="search-mobile__history">
+        <h3>Популярное</h3>
+        <a href="#">Очистить</a>
+      </div>
+    <ul class="search-mobile__list search-mobile__popular">
+      <li>
+        <span>Популярный товар 1</span>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+            <defs />
+            <path fill="#c4c4c4" d="M.883 2.948A1.455 1.455 0 112.941.89l6.17 6.171A1.455 1.455 0 117.055 9.12z" />
+            <path fill="#c4c4c4" d="M7.061.888A1.455 1.455 0 119.12 2.946l-6.171 6.17A1.455 1.455 0 11.89 7.06z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <span>Популярный товар 2</span>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+            <defs />
+            <path fill="#c4c4c4" d="M.883 2.948A1.455 1.455 0 112.941.89l6.17 6.171A1.455 1.455 0 117.055 9.12z" />
+            <path fill="#c4c4c4" d="M7.061.888A1.455 1.455 0 119.12 2.946l-6.171 6.17A1.455 1.455 0 11.89 7.06z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <span>Популярный товар 3</span>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+            <defs />
+            <path fill="#c4c4c4" d="M.883 2.948A1.455 1.455 0 112.941.89l6.17 6.171A1.455 1.455 0 117.055 9.12z" />
+            <path fill="#c4c4c4" d="M7.061.888A1.455 1.455 0 119.12 2.946l-6.171 6.17A1.455 1.455 0 11.89 7.06z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <div class="main__shadow hide"></div>
 
@@ -523,7 +602,7 @@
                 clip-rule="evenodd" />
             </svg>
           </a>
-          <a href="#" class="cart-mobile cart-mobile--active">
+          <a href="cart.html" class="cart-mobile cart-mobile--active">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="20" height="20" viewBox="0 0 20 20">
               <defs />
               <path fill="#04B2D9"
@@ -1220,8 +1299,6 @@
       </div>
     </div>
   </footer>
-
-
 
   <div class="modal" id="modal-recall" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">

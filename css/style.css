@@ -60,7 +60,7 @@ body {
   background-color: #174e83;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .menu-button {
@@ -140,7 +140,7 @@ body {
 }
 
 .wrapper-navigation {
-  z-index: 3;
+  z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
@@ -1926,7 +1926,8 @@ input::-webkit-search-results-decoration {
 }
 
 .price__cart {
-  width: 136px;
+  /* width: 136px; */
+  width: 120px;
   height: 38px;
   border-radius: 6px;
   background-color: #04b2d9;
@@ -2892,6 +2893,38 @@ input::-webkit-search-results-decoration {
   display: none;
 }
 
+.mobile-menu-wrapper {
+  display: none;
+}
+
+.filter-mobile {
+  display: none;
+}
+
+.filter__show-more-mobile {
+  display: none;
+}
+
+.sort-mobile {
+  display: none;
+}
+
+.goods-mobile {
+  display: none;
+}
+
+.item-wrapper-mobile {
+  display: none;
+}
+
+.list-wrapper-mobile__order {
+  display: none;
+}
+
+.list-wrapper-mobile__cart {
+  display: none;
+}
+
 @media (min-width: 1300px) and (max-width: 1919px) {
   .content {
     padding-left: 88px;
@@ -3180,58 +3213,6 @@ input::-webkit-search-results-decoration {
   }
 
 }
-
-/* @media (max-width: 1299px) {
-  .wrapper-navigation {
-    display: none;
-  }
-
-  .header {
-    display: none;
-  }
-
-  .main {
-    padding: 0 15px;
-    margin: 0;
-  }
-
-  .page-navigation {
-    display: none;
-  }
-
-  .slider a {
-    height: 100%;
-  }
-
-  .slider a img {
-    height: 100%;
-  }
-
-  .slider-one .slick-dots {
-    bottom: 15px;
-  }
-
-  .widgets__price-wrapper {
-    flex-wrap: wrap;
-  }
-
-  .widgets__price {
-    margin-bottom: 10px;
-  }
-
-  .widgets__order {
-    width: 100%;
-  }
-
-  .widgets__order a {
-    width: 100%;
-  }
-
-  .slick-slide img {
-    margin: 0 auto;
-  }
-
-} */
 
 @media (min-width: 320px) and (max-width: 1299px) {
   .header {
@@ -4497,9 +4478,9 @@ input::-webkit-search-results-decoration {
   .navigation__mobile-menu .navigation__item-wrapper p {
     margin: 0;
     color: #1f4e6a;
-font-size: 12px;
-font-weight: 400;
-line-height: 1;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
   }
 
   .mm li {
@@ -4530,7 +4511,7 @@ line-height: 1;
   }
 
   .navigation__mobile-menu .navigation__item:hover p {
-  color: #ffffff;
+    color: #ffffff;
   }
 
   .search-mobile-wrapper {
@@ -4541,6 +4522,104 @@ line-height: 1;
     height: 100%;
     background-color: #ffffff;
     z-index: 3;
+  }
+
+  .list-wrapper-mobile__cart {
+    display: block;
+  }
+
+  .list-wrapper-mobile__order {
+    display: block;
+  }
+
+  .goods-mobile {
+    display: block;
+  }
+
+  .sort-mobile {
+    display: block;
+  }
+
+  .search-mobile-wrapper {
+    padding: 20px;
+  }
+
+  .search-mobile-wrapper form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .search-mobile-wrapper label {
+    margin: 0;
+  }
+
+  .search-mobile-wrapper input {
+    border: none;
+    background: #f2f3f5;
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+
+  .search-mobile-wrapper a {
+    font-size: 14px;
+    color: #001a34;
+  }
+
+  .search-mobile__history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+
+  .search-mobile__history h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .search-mobile__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .search-mobile__list li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 15px 0;
+    position: relative;
+  }
+
+  .search-mobile__list li::before {
+    content: "";
+    background-image: url("../img/search-mobile-list-icon.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+  }
+
+  .search-mobile__list span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .search-mobile__list a {
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+
+  .search-mobile__list a svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .search-mobile__popular li::before {
+    background-image: url("../img/search.svg");
   }
 
 }

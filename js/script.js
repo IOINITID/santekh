@@ -214,6 +214,18 @@ $('.filter__show-more-mobile').clickToggle(function () {
     $('.filter__show-more-mobile').text('Показать ещё...');
   });
 
-  $('.search-mobile').on('click', () => {
-    $('.search-mobile-wrapper').removeClass('hide');
-  });
+$('.search-mobile').on('click', () => {
+  $('.search-mobile-wrapper').removeClass('hide');
+});
+
+$('.button-next-mobile').on('click', () => {
+  $('.list-wrapper-mobile__cart').addClass('hide');
+  $('.list-wrapper-mobile__order').removeClass('hide');
+  $('html, body').animate({
+    scrollTop: $('.header').offset().top
+  }, 1000);
+});
+
+$('.search-mobile-wrapper-close').on('click', () => {
+  $('.search-mobile-wrapper').addClass('hide');
+});
