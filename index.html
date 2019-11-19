@@ -1392,29 +1392,6 @@
   <script src="slick/slick.min.js"></script>
   <script src="js/mmenu-light.js"></script>
   <script src="js/script.js"></script>
-  <script>
-    document.addEventListener(
-      "DOMContentLoaded", () => {
-        const node = document.querySelector("#my-menu");
-        const menu = new MmenuLight(node, {
-          title: "",
-        });
-
-        menu.enable("(max-width: 600px)");
-        menu.offcanvas();
-
-        document.querySelector("a[href='#my-menu']")
-          .addEventListener("click", (evnt) => {
-            menu.open();
-
-            //    Don't forget to "preventDefault" and to "stopPropagation".
-            evnt.preventDefault();
-            evnt.stopPropagation();
-          });
-      }
-    );
-
-  </script>
 </body>
 
 </html>

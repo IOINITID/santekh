@@ -229,3 +229,25 @@ $('.button-next-mobile').on('click', () => {
 $('.search-mobile-wrapper-close').on('click', () => {
   $('.search-mobile-wrapper').addClass('hide');
 });
+
+
+document.addEventListener(
+  "DOMContentLoaded", () => {
+    const node = document.querySelector("#my-menu");
+    const menu = new MmenuLight(node, {
+      title: "",
+    });
+
+    menu.enable("(max-width: 600px)");
+    menu.offcanvas();
+
+    document.querySelector("a[href='#my-menu']")
+      .addEventListener("click", (evnt) => {
+        menu.open();
+
+        //    Don't forget to "preventDefault" and to "stopPropagation".
+        evnt.preventDefault();
+        evnt.stopPropagation();
+      });
+  }
+);
