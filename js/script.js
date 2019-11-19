@@ -256,6 +256,3 @@ $('.modal-mobile .data-recall label input').on('focusout', () => {
   $('.modal-mobile .data-recall label input').attr("placeholder", "Номер телефона").placeholder();
 });
 
-$('.search-mobile').on('click', () => {
-  $('.modal-search.show form label input').focus();
-});
