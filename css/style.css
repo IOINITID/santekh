@@ -4634,4 +4634,8 @@ input::-webkit-search-results-decoration {
     max-width: 100% !important;
   }
 
+  .filter-mobile {
+    display: block;
+  }
+
 }
