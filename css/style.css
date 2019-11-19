@@ -4731,4 +4731,47 @@ input::-webkit-search-results-decoration {
     margin-bottom: 20px;
   }
 
+  .filter-mobile__form .filter__label--checkbox input:checked+span {
+    width: 22px;
+    height: 22px;
+    border-radius: 2px;
+  }
+
+  .filter-mobile__form .policy-wrapper span {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter-mobile__form .filter__label--checkbox input:checked+span::before {
+    width: 12px;
+    height: 8px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .filter-mobile__form .filter__label--checkbox span {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter-mobile__form .filter__label span {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter-mobile__form .filter__label input:checked+span {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter-mobile__form .filter__label input:checked+span::before {
+    width: 14px;
+    height: 14px;
+  }
+
+  .filter-mobile__form .help__icon {
+    width: 18px;
+    height: 18px;
+  }
+
 }
