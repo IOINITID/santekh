@@ -4622,4 +4622,12 @@ input::-webkit-search-results-decoration {
     background-image: url("../img/search.svg");
   }
 
+  .item-wrapper-mobile {
+    display: block;
+  }
+
+  .logo-mobile-item {
+    margin-bottom: 10px;
+  }
+
 }
