@@ -4774,4 +4774,14 @@ input::-webkit-search-results-decoration {
     height: 18px;
   }
 
+  .filter-mobile__form .filter__dots {
+    max-height: 90px;
+    overflow: hidden;
+  }
+
+  .feature__mobile .help__icon {
+    width: 18px;
+    height: 18px;
+  }
+
 }
