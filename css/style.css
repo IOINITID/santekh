@@ -4825,4 +4825,50 @@ input::-webkit-search-results-decoration {
     width: 100%;
   }
 
+  .accout-login-wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 61px;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.15);
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #174E83;
+  }
+
+  .mm ul.mm--open {
+    top: 61px;
+  }
+
+  .mm:after {
+    content: none;
+  }
+
+  .accout-login-wrapper span {
+    padding: 0;
+    min-width: 40px;
+    height: 40px;
+    background-color: #04B2D9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .accout-login-wrapper a {
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+
+  .accout-login-wrapper a:not(:last-child):after {
+    content: none;
+  }
+
+  .accout-login-wrapper button {
+    border: none;
+    background: none;
+  }
+
 }
