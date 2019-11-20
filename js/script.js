@@ -291,3 +291,27 @@ function () {
   $('.filter__dots--country').removeClass('filter__dots--show');
   $('.filter__dots-show.filter-country').text('Показать все');
 });
+
+if ( $('.filter__dots--diameter label').length > 3) {
+  $('.filter__dots-show.diameter').show();
+}
+
+if ( $('.filter__dots--checkbox label').length > 3) {
+  $('.filter__dots-show.checkbox').show();
+}
+
+if ( $('.filter__dots--brand label').length > 3) {
+  $('.filter__dots-show.brand').show();
+}
+
+if ( $('.filter__dots--available label').length > 3) {
+  $('.filter__dots-show.filter-available').show();
+}
+
+if ( $('.filter__dots--goods label').length > 3) {
+  $('.filter__dots-show.filter-goods').show();
+}
+
+if ( $('.filter__dots--country label').length > 3) {
+  $('.filter__dots-show.filter-country').show();
+}
