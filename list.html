@@ -570,7 +570,6 @@
             <h2>Раздел 2-го уровня</h2>
             <div class="filter-mobile">
               <button type="submit" data-toggle="modal" data-target="#modal-form">Фильтр</button>
-              <!-- <a href="#" data-toggle="modal" data-target="#modal-form">aca</a> -->
             </div>
             <div class="container">
               <div class="row">
@@ -1803,6 +1802,7 @@
         </div>
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Страна производитель</legend>
+          <div class="filter__dots filter__dots--country">
           <label class="filter__label" for="country-one">
             Россия
             <input type="radio" name="country" id="country-one" value="Россия">
@@ -1818,46 +1818,99 @@
             <input type="radio" name="country" id="country-three" value="Франция">
             <span></span>
           </label>
+          <label class="filter__label" for="country-one">
+              Россия
+              <input type="radio" name="country" id="country-one" value="Россия">
+              <span></span>
+            </label>
+            <label class="filter__label" for="country-two">
+              Германия
+              <input type="radio" name="country" id="country-two" value=" Германия">
+              <span></span>
+            </label>
+            <label class="filter__label" for="country-three">
+              Франция
+              <input type="radio" name="country" id="country-three" value="Франция">
+              <span></span>
+            </label>
+          </div>
+          <a href="#" class="filter__dots-show filter-country">Показать все</a>
         </fieldset>
       </div>
       <div class="filer__fieldset-wrapper">
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Показывать товары</legend>
-          <label class="filter__label" for="goods-one">
-            Акция
-            <input type="radio" name="goods" id="goods-one" value="Акция">
-            <span></span>
-          </label>
-          <label class="filter__label" for="goods-two">
-            Германия
-            <input type="radio" name="goods" id="goods-two" value="Германия">
-            <span></span>
-          </label>
-          <label class="filter__label" for="goods-three">
-            Франция
-            <input type="radio" name="goods" id="goods-three" value="Франция">
-            <span></span>
-          </label>
+          <div class="filter__dots filter__dots--goods">
+            <label class="filter__label" for="goods-one">
+              Акция
+              <input type="radio" name="goods" id="goods-one" value="Акция">
+              <span></span>
+            </label>
+            <label class="filter__label" for="goods-two">
+              Германия
+              <input type="radio" name="goods" id="goods-two" value="Германия">
+              <span></span>
+            </label>
+            <label class="filter__label" for="goods-three">
+              Франция
+              <input type="radio" name="goods" id="goods-three" value="Франция">
+              <span></span>
+            </label>
+            <label class="filter__label" for="goods-one">
+              Акция
+              <input type="radio" name="goods" id="goods-one" value="Акция">
+              <span></span>
+            </label>
+            <label class="filter__label" for="goods-two">
+              Германия
+              <input type="radio" name="goods" id="goods-two" value="Германия">
+              <span></span>
+            </label>
+            <label class="filter__label" for="goods-three">
+              Франция
+              <input type="radio" name="goods" id="goods-three" value="Франция">
+              <span></span>
+            </label>
+          </div>
+          <a href="#" class="filter__dots-show filter-goods">Показать все</a>
         </fieldset>
       </div>
       <div class="filer__fieldset-wrapper">
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Наличие</legend>
-          <label class="filter__label" for="available-one">
-            В наличии
-            <input type="radio" name="available" id="available-one" value="В наличии">
-            <span></span>
-          </label>
-          <label class="filter__label" for="available-two">
-            Распродажа остатка
-            <input type="radio" name="available" id="available-two" value="Распродажа остатка">
-            <span></span>
-          </label>
-          <label class="filter__label" for="available-three">
-            Ожидает поступления
-            <input type="radio" name="available" id="available-three" value="Ожидает поступления">
-            <span></span>
-          </label>
+          <div class="filter__dots filter__dots--available">
+            <label class="filter__label" for="available-one">
+              В наличии
+              <input type="radio" name="available" id="available-one" value="В наличии">
+              <span></span>
+            </label>
+            <label class="filter__label" for="available-two">
+              Распродажа остатка
+              <input type="radio" name="available" id="available-two" value="Распродажа остатка">
+              <span></span>
+            </label>
+            <label class="filter__label" for="available-three">
+              Ожидает поступления
+              <input type="radio" name="available" id="available-three" value="Ожидает поступления">
+              <span></span>
+            </label>
+            <label class="filter__label" for="available-one">
+              В наличии
+              <input type="radio" name="available" id="available-one" value="В наличии">
+              <span></span>
+            </label>
+            <label class="filter__label" for="available-two">
+              Распродажа остатка
+              <input type="radio" name="available" id="available-two" value="Распродажа остатка">
+              <span></span>
+            </label>
+            <label class="filter__label" for="available-three">
+              Ожидает поступления
+              <input type="radio" name="available" id="available-three" value="Ожидает поступления">
+              <span></span>
+            </label>
+          </div>
+          <a href="#" class="filter__dots-show filter-available">Показать все</a>
         </fieldset>
       </div>
       <div class="filer__fieldset-wrapper">
@@ -1870,21 +1923,39 @@
                 voluptatum, mollitia dolorem inventore ullam ab laborum esse quae.</p>
             </div>
           </legend>
-          <label class="filter__label" for="brand-one">
-            ТНК
-            <input type="radio" name="brand" id="brand-one" value="ТНК">
-            <span></span>
-          </label>
-          <label class="filter__label" for="brand-two">
-            ЛГБТ
-            <input type="radio" name="brand" id="brand-two" class="ЛГБТ">
-            <span></span>
-          </label>
-          <label class="filter__label" for="brand-three">
-            КАМАЗ
-            <input type="radio" name="brand" id="brand-three" value="КАМАЗ">
-            <span></span>
-          </label>
+          <div class="filter__dots filter__dots--brand">
+            <label class="filter__label" for="brand-one">
+              ТНК
+              <input type="radio" name="brand" id="brand-one" value="ТНК">
+              <span></span>
+            </label>
+            <label class="filter__label" for="brand-two">
+              ЛГБТ
+              <input type="radio" name="brand" id="brand-two" class="ЛГБТ">
+              <span></span>
+            </label>
+            <label class="filter__label" for="brand-three">
+              КАМАЗ
+              <input type="radio" name="brand" id="brand-three" value="КАМАЗ">
+              <span></span>
+            </label>
+            <label class="filter__label" for="brand-one">
+              ТНК
+              <input type="radio" name="brand" id="brand-one" value="ТНК">
+              <span></span>
+            </label>
+            <label class="filter__label" for="brand-two">
+              ЛГБТ
+              <input type="radio" name="brand" id="brand-two" class="ЛГБТ">
+              <span></span>
+            </label>
+            <label class="filter__label" for="brand-three">
+              КАМАЗ
+              <input type="radio" name="brand" id="brand-three" value="КАМАЗ">
+              <span></span>
+            </label>
+          </div>
+          <a href="#" class="filter__dots-show brand">Показать все</a>
         </fieldset>
       </div>
       <div class="filer__fieldset-wrapper">
@@ -1897,7 +1968,7 @@
                 voluptatum, mollitia dolorem inventore ullam ab laborum esse quae.</p>
             </div>
           </legend>
-          <div class="filter__dots">
+          <div class="filter__dots filter__dots--diameter">
             <label class="filter__label" for="diameter-one">
               15
               <input type="radio" name="diameter" id="diameter-one" value="15">
@@ -1944,6 +2015,7 @@
               <span></span>
             </label>
           </div>
+          <a href="#" class="filter__dots-show diametr">Показать все</a>
         </fieldset>
       </div>
       <div class="filer__fieldset-wrapper">
@@ -1962,7 +2034,7 @@
       <div class="filer__fieldset-wrapper">
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Чекбоксы</legend>
-          <div class="filter__dots filter__checkbox">
+          <div class="filter__dots filter__dots--checkbox filter__checkbox">
             <label class="filter__label filter__label--checkbox" for="checkbox-one">
               ТНК
               <input type="checkbox" name="checkbox-one" id="checkbox-one" value="ТНК">
@@ -1994,6 +2066,7 @@
               <span></span>
             </label>
           </div>
+          <a href="#" class="filter__dots-show checkbox">Показать все</a>
         </fieldset>
       </div>
       <div class="filer__fieldset-wrapper">
