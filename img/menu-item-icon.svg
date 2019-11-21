@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+  <defs/>
+  <circle cx="10" cy="10" r="10" fill="#F0F6FA" transform="rotate(-180 10 10)"/>
+  <path fill="#BED8E9" d="M5 11l5-5 1 1-5 5z"/>
+  <path fill="#BED8E9" d="M10 6l5 5-1 1-5-5z"/>
+</svg>

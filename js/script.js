@@ -360,3 +360,10 @@ $('.modal-backdrop').on('click', () => {
   $('.menu-prev-wrapper').addClass('hide');
   $('.navigation__mobile-menu .navigation__item .navigation__list--inner').addClass('hide');
 });
+
+$('.collapsse-link').clickToggle(function () {
+  $('.collapsse-link').addClass('collapsse-link--active')
+},
+function () {
+  $('.collapsse-link').removeClass('collapsse-link--active')
+});
