@@ -4852,6 +4852,7 @@ input::-webkit-search-results-decoration {
     font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
+    white-space: nowrap;
   }
 
   .accout-login-wrapper button {
@@ -4876,6 +4877,7 @@ input::-webkit-search-results-decoration {
     color: #FFFFFF;
     display: flex;
     align-items: center;
+    white-space: nowrap;
   }
 
   .menu-prev-wrapper a::before {
