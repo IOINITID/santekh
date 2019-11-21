@@ -4927,21 +4927,10 @@ input::-webkit-search-results-decoration {
     margin: 0;
   }
 
-  .mobile-menu-animation {
-    display: block;
-    animation: menu 1s ease-in-out;
-  }
-
-  @keyframes menu {
-    0% {
-      transform: translateX(-100%) !important;
-      transition: 1s ease-in-out !important;
-    }
-
-    0% {
-      transform: translateX(0) !important;
-      transition: 1s ease-in-out !important;
-    }
+  .navigation__item:hover,
+  .navigation__item:focus,
+  .navigation__item:active {
+    background-color: #2a6b93;
   }
 
 }
