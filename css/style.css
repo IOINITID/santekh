@@ -4985,6 +4985,7 @@ input::-webkit-search-results-decoration {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    padding: 0 10px;
   }
 
   .menu-item--contacts .socials__list--mobile li {
