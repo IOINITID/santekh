@@ -353,6 +353,7 @@ $('.menu-mobile').on('click', () => {
   $('.accout-login-wrapper').removeClass('hide');
   $('.menu-prev-wrapper').addClass('hide');
   $('.navigation__mobile-menu .navigation__item .navigation__list--inner').addClass('hide');
+  $('body').addClass('body-lock');
 });
 
 $('.modal-backdrop').on('click', () => {

@@ -5069,7 +5069,7 @@ input::-webkit-search-results-decoration {
     margin-right: 15px;
   }
 
-  .navigation__mobile-menu .navigation__item:hover .navigation__list--inner,
+  /* .navigation__mobile-menu .navigation__item:hover .navigation__list--inner,
   .navigation__mobile-menu .navigation__item:focus .navigation__list--inner {
     background-color: #ffffff;
     height: 100%;
@@ -5082,6 +5082,10 @@ input::-webkit-search-results-decoration {
     position: absolute;
     top: 0;
     left: 0;
+} */
+
+.body-lock {
+  overflow: hidden;
 }
 
 }
