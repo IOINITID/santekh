@@ -5085,4 +5085,8 @@ input::-webkit-search-results-decoration {
     overflow: hidden;
   }
 
+  .modal {
+    -webkit-overflow-scrolling: touch;
+  }
+
 }
