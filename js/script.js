@@ -367,17 +367,3 @@ $('.collapsse-link').clickToggle(function () {
 function () {
   $('.collapsse-link').removeClass('collapsse-link--active')
 });
-
-$('body').on('touchstart touchmove touchend', e => {
-  let scrollDisabled=$('.scroll-disable');
-  if (scrollDisabled.length > 0 &&  scrollDisabled.has($(e.target)).length===0) {
-      e.preventDefault();
-      e.stopPropagation();
-  }
-});
-setInterval(() => $('.modal:visible').css('top', '0px'), 100);
-
-$(document).on({
-  'show.bs.modal': e => $(e.target).addClass('scroll-disable'),
-  'hidden.bs.modal': e => $(e.target).removeClass('scroll-disable')
-}, '.modal');

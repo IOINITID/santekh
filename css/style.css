@@ -5069,10 +5069,20 @@ input::-webkit-search-results-decoration {
     margin-right: 15px;
   }
 
-  .freezePage{
+  .modal-info ul {
+    padding: 40px 0;
+  }
+
+  .modal-info ul li {
+    margin-bottom: 20px;
+  }
+
+  .modal-info ul li:last-child {
+    margin: 0;
+  }
+
+  .modal-open .modal-menu {
     overflow: hidden;
-    height: 100%;
-    position: relative;
   }
 
 }
