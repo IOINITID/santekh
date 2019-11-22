@@ -5076,4 +5076,12 @@ input::-webkit-search-results-decoration {
     overflow-y: scroll;
   }
 
+  .navigation__mobile-menu {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 }
