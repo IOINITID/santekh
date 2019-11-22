@@ -5069,8 +5069,11 @@ input::-webkit-search-results-decoration {
     margin-right: 15px;
   }
 
-  body.modal-open {
-    overflow: hidden;
-}
+  .navigation__mobile-menu .navigation__item:hover .navigation__list--inner,
+  .navigation__mobile-menu .navigation__item:focus .navigation__list--inner {
+    background-color: #ffffff;
+    height: 100%;
+    overflow-y: scroll;
+  }
 
 }
