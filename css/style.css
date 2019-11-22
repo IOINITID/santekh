@@ -5069,4 +5069,8 @@ input::-webkit-search-results-decoration {
     margin-right: 15px;
   }
 
+  body.modal-open {
+    overflow: hidden;
+}
+
 }
