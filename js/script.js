@@ -368,15 +368,6 @@ function () {
   $('.collapsse-link').removeClass('collapsse-link--active')
 });
 
-// $('.modal').on('shown.bs.modal', function (e) {
-//   $('html').addClass('freezePage');
-//   $('body').addClass('freezePage');
-// });
-// $('.modal').on('hidden.bs.modal', function (e) {
-//   $('html').removeClass('freezePage');
-//   $('body').removeClass('freezePage');
-// });
-
 $('body').on('touchstart touchmove touchend', e => {
   let scrollDisabled=$('.scroll-disable');
   if (scrollDisabled.length > 0 &&  scrollDisabled.has($(e.target)).length===0) {
@@ -384,7 +375,7 @@ $('body').on('touchstart touchmove touchend', e => {
       e.stopPropagation();
   }
 });
-setInterval(() => $('.modal:visible').css('top', '20px'), 100);
+setInterval(() => $('.modal:visible').css('top', '0px'), 100);
 
 $(document).on({
   'show.bs.modal': e => $(e.target).addClass('scroll-disable'),
