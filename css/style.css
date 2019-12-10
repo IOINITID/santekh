@@ -3214,7 +3214,7 @@ input::-webkit-search-results-decoration {
 
 }
 
-@media (min-width: 320px) and (max-width: 1299px) {
+@media (min-width: 320px) and (max-width: 1199px) {
   .header {
     display: none;
   }
