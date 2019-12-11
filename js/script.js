@@ -121,13 +121,22 @@ $('.slider-two').slick({
   prevArrow: '.slider-two-prev',
   nextArrow: '.slider-two-next',
   responsive: [{
-    breakpoint: 1300,
-    settings: {
-      arrows: false,
-      slidesToShow: 1,
-      dots: true
+      breakpoint: 1199,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1299,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        dots: false
+      }
     }
-  }]
+  ]
 });
 // slider-three element
 $('.slider-three').slick({
@@ -140,13 +149,22 @@ $('.slider-three').slick({
   prevArrow: '.slider-three-prev',
   nextArrow: '.slider-three-next',
   responsive: [{
-    breakpoint: 1300,
-    settings: {
-      arrows: false,
-      slidesToShow: 1,
-      dots: true
+      breakpoint: 1199,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1299,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        dots: false
+      }
     }
-  }]
+  ]
 });
 // slider-four element
 $('.slider-four').slick({
@@ -159,13 +177,22 @@ $('.slider-four').slick({
   prevArrow: '.slider-four-prev',
   nextArrow: '.slider-four-next',
   responsive: [{
-    breakpoint: 1300,
-    settings: {
-      arrows: false,
-      slidesToShow: 1,
-      dots: true
+      breakpoint: 1199,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1299,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        dots: false
+      }
     }
-  }]
+  ]
 });
 // slider-five element
 $('.slider-five').slick({
@@ -178,11 +205,19 @@ $('.slider-five').slick({
   prevArrow: '.slider-five-prev',
   nextArrow: '.slider-five-next',
   responsive: [{
-    breakpoint: 1300,
+    breakpoint: 1199,
     settings: {
       arrows: false,
       slidesToShow: 3,
       dots: true
+    }
+  },
+  {
+    breakpoint: 1299,
+    settings: {
+      arrows: false,
+      slidesToShow: 4,
+      dots: false
     }
   }]
 });
@@ -362,8 +397,8 @@ $('.modal-backdrop').on('click', () => {
 });
 
 $('.collapsse-link').clickToggle(function () {
-  $('.collapsse-link').addClass('collapsse-link--active')
-},
-function () {
-  $('.collapsse-link').removeClass('collapsse-link--active')
-});
+    $('.collapsse-link').addClass('collapsse-link--active')
+  },
+  function () {
+    $('.collapsse-link').removeClass('collapsse-link--active')
+  });
