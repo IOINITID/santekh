@@ -4613,7 +4613,7 @@ input::-webkit-search-results-decoration {
     padding: 10px 20px;
   }
 
-  .navigation__mobile-menu .navigation__item-wrapper svg {
+  .navigation__mobile-menu .navigation__item-wrapper img {
     width: 40px;
     height: 40px;
     min-width: 40px;
@@ -5231,6 +5231,11 @@ input::-webkit-search-results-decoration {
 
   .modal {
     -webkit-overflow-scrolling: touch;
+  }
+
+  #collapseExample {
+    overflow-y: scroll;
+    height: 100%;
   }
 
 }
