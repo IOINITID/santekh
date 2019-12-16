@@ -5235,7 +5235,7 @@ input::-webkit-search-results-decoration {
 
   #collapseExample {
     overflow-y: scroll;
-    height: 100%;
+    height: calc(100% - 121px);
   }
 
 }
